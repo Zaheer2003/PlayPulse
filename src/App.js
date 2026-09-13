@@ -16,7 +16,6 @@ import {
   MagnifyingGlass,
   Mountains,
   Play,
-  Plus,
   PuzzlePiece,
   ArrowRight,
   SquaresFour,
