@@ -4,6 +4,7 @@ import {
   BoxingGlove,
   BookmarkSimple,
   CaretDown,
+  Clock,
   CirclesThreePlus,
   Crosshair,
   CrownCross,
@@ -19,6 +20,7 @@ import {
   PuzzlePiece,
   ArrowRight,
   SquaresFour,
+  Star,
   SteeringWheel,
   UserList,
   UsersThree,
@@ -91,8 +93,8 @@ function App() {
         <section className="dashboard-grid" aria-label="Play Pulse dashboard">
           <article className="trailer-panel" id="games">
             <div className="panel-heading"><div><p className="eyebrow">Trending now</p><h1 id="hero-title">Trending trailers</h1></div><span className="slide-count">01 / 04</span></div>
-            <div className="trailer-art"><img src="/Assets/Home Carousel 1.jpg" alt="Featured game trailer artwork" /><div className="trailer-overlay"><span className="trailer-kicker">Featured trailer</span><h2>Into the <em>unknown.</em></h2><p>Discover what the pulse is playing right now.</p><button className="play-trailer" type="button" aria-label="Play featured trailer"><Play weight="fill" /></button></div></div>
-            <div className="trailer-footer"><span>Hades II</span><span>Action · Adventure</span><a href="#games" aria-label="Next trailer"><ArrowRight /></a></div>
+            <div className="trailer-art"><img src="/Assets/Home Carousel 1.jpg" alt="Featured game trailer artwork" /><div className="trailer-overlay"><span className="trailer-kicker">#Trending</span><h2>Hades <em>II</em></h2><p>Descend into the underworld and fight your way through a fast, mythic adventure.</p><div className="trailer-actions"><button className="play-now-button" type="button"><Play weight="fill" /> Play now</button><button className="save-trailer-button" type="button" aria-label="Save Hades II" title="Save trailer"><BookmarkSimple weight="regular" /></button></div></div></div>
+            <div className="trailer-footer"><div className="trailer-thumb"><img src="/Assets/Home Carousel 2.jpg" alt="Hades II trailer preview" /><Play className="thumb-play" weight="fill" /></div><div className="trailer-details"><strong>Watch trailer</strong><span>Hades II · Action / Adventure</span><div className="trailer-stats"><span><Star weight="fill" /> 4.9</span><span><Clock /> 2h 10m</span></div></div><a href="#games" aria-label="Next trailer"><ArrowRight /></a></div>
           </article>
 
           <div className="dashboard-side">
