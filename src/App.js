@@ -1,5 +1,5 @@
 import './App.css';
-import { FaBell, FaBookmark, FaChevronDown, FaSearch } from 'react-icons/fa6';
+import { FaBell, FaBookmark, FaChevronDown, FaMagnifyingGlass } from 'react-icons/fa6';
 import Footer from './Footer';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <nav className="navbar" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="Play Pulse home"><img src="/Assets/Logo.png" alt="Play Pulse" /></a>
         <form className="nav-search" role="search">
-          <FaSearch aria-hidden="true" />
+          <FaMagnifyingGlass aria-hidden="true" />
           <input type="search" placeholder="Search games" aria-label="Search games" />
         </form>
         <button className="icon-button menu-button" type="button" aria-label="Open menu">☰</button>
