@@ -7,6 +7,13 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-main">
+        <div className="footer-intro">
+          <a className="footer-brand" href="#top" aria-label="Play Pulse home">
+            <img src="/Assets/Logo.png" alt="Play Pulse" />
+          </a>
+          <p>Discover your next favorite game, connect with fellow players, and keep your pulse on everything worth playing.</p>
+        </div>
+
         <div className="footer-links-group">
           <div className="footer-link-column">
             <h2>Resources</h2>
@@ -21,18 +28,11 @@ function Footer() {
         </div>
 
         <div className="footer-aside">
-          <div className="footer-intro">
-            <a className="footer-brand" href="#top" aria-label="Play Pulse home">
-              <img src="/Assets/Logo.png" alt="" />
-              <span>play<span>pulse</span></span>
-            </a>
-            <p>Discover your next favorite game, connect with fellow players, and keep your pulse on everything worth playing.</p>
-            <div className="social-links" aria-label="Social media links">
-              <a href="#facebook" aria-label="Facebook">f</a>
-              <a href="#instagram" aria-label="Instagram">◎</a>
-              <a href="#youtube" aria-label="YouTube">▶</a>
-              <a href="#x" aria-label="X">𝕏</a>
-            </div>
+          <div className="social-links" aria-label="Social media links">
+            <a href="#facebook" aria-label="Facebook">f</a>
+            <a href="#instagram" aria-label="Instagram">◎</a>
+            <a href="#youtube" aria-label="YouTube">▶</a>
+            <a href="#x" aria-label="X">𝕏</a>
           </div>
 
           <div className="footer-app-row">
