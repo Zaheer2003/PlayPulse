@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <section className="pulse-strip" id="games" aria-label="Trending games"><p>Trending through the pulse</p><div className="trend-list"><span>01 <b>Hades II</b></span><span>02 <b>Split Fiction</b></span><span>03 <b>Balatro</b></span><span>04 <b>Monster Hunter</b></span></div><a href="#playlists" className="round-arrow" aria-label="View trending games">↗</a></section>
         <section className="community-section" id="community"><div><p className="eyebrow">More than a library</p><h2>Stay curious.<br /><em>Play together.</em></h2></div><p className="section-copy">Follow the people who get your taste, swap recommendations, and always have somewhere new to go next.</p><a className="outline-button" id="playlists" href="#top">Discover the community <span aria-hidden="true">↗</span></a></section>
       </main>
+      <Footer />
     </div>
   );
 }
