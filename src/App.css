@@ -6,15 +6,20 @@ button { cursor: pointer; }
 a { color: inherit; text-decoration: none; }
 .site-shell { min-height: 100vh; overflow: hidden; background: var(--background); }
 .navbar { align-items: center; background: var(--surface); display: flex; height: 76px; justify-content: space-between; padding: 0 5.5vw; }
-.brand { align-items: center; display: flex; font-size: 21px; font-weight: 700; gap: 9px; letter-spacing: -1px; }
-.brand > span:last-child span { color: var(--primary); }
-.brand-mark { align-items: center; background: var(--primary); border-radius: 50%; color: var(--black); display: inline-flex; font-size: 15px; height: 29px; justify-content: center; transform: rotate(-12deg); width: 29px; }
-.nav-links { display: flex; gap: 38px; margin-left: 11vw; }
-.nav-links a { color: #A4A4A4; font-size: 13px; transition: color .2s ease; }
-.nav-links a:hover { color: var(--white); }
-.nav-cta, .primary-button { background: var(--primary); border: 0; color: var(--black); font-weight: 700; }
-.nav-cta { border-radius: 4px; font-size: 12px; padding: 11px 15px; }
-.nav-cta span, .primary-button span, .outline-button span { font-size: 16px; margin-left: 8px; }
+.brand { align-items: center; display: flex; }
+.brand img { display: block; height: 42px; object-fit: contain; width: 42px; }
+.nav-search { align-items: center; border-bottom: 1px solid #555; display: flex; gap: 10px; margin-left: 11vw; width: min(250px, 28vw); }
+.nav-search svg { color: #969696; font-size: 14px; }
+.nav-search input { background: transparent; border: 0; color: var(--white); font-size: 13px; outline: 0; padding: 9px 0; width: 100%; }
+.nav-search input::placeholder { color: #888; }
+.nav-actions { align-items: center; display: flex; gap: 10px; }
+.language-button, .nav-icon-button, .login-button { border: 0; color: var(--white); cursor: pointer; }
+.language-button { align-items: center; background: transparent; display: inline-flex; font-size: 12px; gap: 7px; padding: 10px 4px; }
+.language-button svg { color: #999; font-size: 10px; }
+.nav-icon-button { align-items: center; background: #2b2b2b; border: 1px solid #444; border-radius: 50%; display: inline-flex; font-size: 13px; height: 34px; justify-content: center; transition: border-color .2s ease, color .2s ease; width: 34px; }
+.nav-icon-button:hover { border-color: var(--primary); color: var(--primary); }
+.login-button { background: var(--primary); border-radius: 4px; color: var(--black); font-size: 12px; font-weight: 700; padding: 11px 18px; }
+.primary-button span, .outline-button span { font-size: 16px; margin-left: 8px; }
 .menu-button { display: none; }
 .hero { display: grid; grid-template-columns: minmax(380px, .9fr) 1.1fr; margin: 0 auto; max-width: 1440px; min-height: 632px; padding: 78px 5.5vw 54px; }
 .hero-copy { align-self: center; max-width: 555px; padding-bottom: 22px; position: relative; z-index: 2; }
@@ -43,5 +48,5 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .game-card { background: var(--primary); bottom: 37px; color: var(--black); left: 30px; padding: 16px 19px 17px; position: absolute; transform: rotate(-5deg); width: 166px; z-index: 4; }.card-kicker { display: block; font-size: 9px; letter-spacing: 1px; margin-bottom: 10px; }.game-card strong { font-size: 24px; letter-spacing: -1px; line-height: .9; }.game-card i { font-weight: 400; }.card-arrow { bottom: 14px; font-size: 20px; position: absolute; right: 14px; }
 .pulse-strip { align-items: center; border-bottom: 1px solid #303030; border-top: 1px solid #303030; display: flex; gap: 4vw; margin: 0 5.5vw; min-height: 89px; }.pulse-strip p { color: #777; font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; }.trend-list { display: flex; flex: 1; justify-content: space-between; }.trend-list span { color: #777; font-size: 11px; }.trend-list b { color: #EEE; font-size: 12px; font-weight: 500; margin-left: 10px; }.round-arrow { align-items: center; border: 1px solid #555; border-radius: 50%; display: flex; height: 32px; justify-content: center; width: 32px; }
 .community-section { align-items: end; display: grid; gap: 30px; grid-template-columns: 1fr .8fr auto; margin: 0 5.5vw; padding: 105px 0 120px; }.community-section h2 { font-size: clamp(42px, 5vw, 68px); font-weight: 500; letter-spacing: -3px; line-height: .96; margin: 0; }.section-copy { color: #9C9C9C; font-size: 14px; line-height: 1.6; max-width: 250px; }.outline-button { border-bottom: 1px solid var(--primary); color: var(--primary); font-size: 12px; padding-bottom: 10px; white-space: nowrap; }
-@media (max-width: 800px) { .navbar { height: 68px; padding: 0 6vw; }.nav-links, .nav-cta { display: none; }.menu-button { background: transparent; border: 0; color: var(--white); display: block; font-size: 20px; }.hero { display: flex; flex-direction: column; min-height: auto; padding: 63px 6vw 52px; }.hero-copy { padding-bottom: 42px; }.hero-art { height: 390px; margin: 0 0 10px 6vw; width: calc(100% - 6vw); }.game-character { transform: translateX(-50%) scale(.83); transform-origin: bottom; }.pulse-strip { align-items: flex-start; flex-wrap: wrap; gap: 15px; margin: 0 6vw; padding: 20px 0; }.trend-list { flex-basis: 100%; flex-wrap: wrap; gap: 15px; }.community-section { align-items: start; display: flex; flex-direction: column; margin: 0 6vw; padding: 76px 0 85px; }.section-copy { margin: 0; }.hero-description { margin-top: 24px; } }
+@media (max-width: 800px) { .navbar { height: 68px; padding: 0 6vw; }.nav-search, .nav-actions { display: none; }.menu-button { background: transparent; border: 0; color: var(--white); display: block; font-size: 20px; }.hero { display: flex; flex-direction: column; min-height: auto; padding: 63px 6vw 52px; }.hero-copy { padding-bottom: 42px; }.hero-art { height: 390px; margin: 0 0 10px 6vw; width: calc(100% - 6vw); }.game-character { transform: translateX(-50%) scale(.83); transform-origin: bottom; }.pulse-strip { align-items: flex-start; flex-wrap: wrap; gap: 15px; margin: 0 6vw; padding: 20px 0; }.trend-list { flex-basis: 100%; flex-wrap: wrap; gap: 15px; }.community-section { align-items: start; display: flex; flex-direction: column; margin: 0 6vw; padding: 76px 0 85px; }.section-copy { margin: 0; }.hero-description { margin-top: 24px; } }
 @media (max-width: 450px) { h1 { font-size: 55px; letter-spacing: -3px; }.hero-art { height: 345px; }.game-card { bottom: 22px; left: 18px; }.tag-top { left: 18px; }.tag-bottom { bottom: 15px; right: 16px; }.hero-actions { align-items: flex-start; flex-direction: column; gap: 12px; }.member-note { margin-top: 29px; } }

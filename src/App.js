@@ -1,14 +1,23 @@
 import './App.css';
+import { FaBell, FaBookmark, FaChevronDown, FaSearch } from 'react-icons/fa6';
 import Footer from './Footer';
 
 function App() {
   return (
     <div className="site-shell">
       <nav className="navbar" aria-label="Primary navigation">
-        <a className="brand" href="#top" aria-label="Play Pulse home"><span className="brand-mark" aria-hidden="true">P</span><span>play<span>pulse</span></span></a>
-        <div className="nav-links"><a href="#games">Games</a><a href="#community">Community</a><a href="#playlists">Playlists</a></div>
+        <a className="brand" href="#top" aria-label="Play Pulse home"><img src="/Assets/Logo.png" alt="Play Pulse" /></a>
+        <form className="nav-search" role="search">
+          <FaSearch aria-hidden="true" />
+          <input type="search" placeholder="Search games" aria-label="Search games" />
+        </form>
         <button className="icon-button menu-button" type="button" aria-label="Open menu">☰</button>
-        <button className="nav-cta" type="button">Join the pulse <span aria-hidden="true">↗</span></button>
+        <div className="nav-actions">
+          <button className="language-button" type="button" aria-label="Select language">Eng <FaChevronDown aria-hidden="true" /></button>
+          <button className="nav-icon-button" type="button" aria-label="Saved games" title="Saved games"><FaBookmark aria-hidden="true" /></button>
+          <button className="nav-icon-button" type="button" aria-label="Notifications" title="Notifications"><FaBell aria-hidden="true" /></button>
+          <button className="login-button" type="button">Login</button>
+        </div>
       </nav>
 
       <main id="top">
