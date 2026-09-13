@@ -23,7 +23,7 @@
 .store-badges { align-items: center; display: flex; gap: 10px; justify-content: flex-end; }
 .store-badges a { display: block; }
 .store-badges img { display: block; height: 38px; object-fit: contain; width: auto; }
-.footer-bottom { align-items: center; border-top: 1px solid #303030; color: #777; display: flex; font-size: 11px; justify-content: space-between; padding-top: 0; }
+.footer-bottom { align-items: center; border-top: 1px solid #303030; color: #777; display: flex; font-size: 11px; justify-content: space-between; padding-top: 14px; }
 .footer-bottom p { margin: 0; }
 .legal-links { display: flex; gap: 25px; }
 .legal-links a { transition: color .2s ease; }
