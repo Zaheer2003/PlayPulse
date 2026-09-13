@@ -1,5 +1,5 @@
 import './Footer.css';
-import { FaFacebookF, FaFolderOpen, FaInstagram, FaYoutube, FaXTwitter } from 'react-icons/fa6';
+import { FaFacebookF, FaInstagram, FaYoutube, FaXTwitter } from 'react-icons/fa6';
 
 const resources = ['About us', 'Developers', 'Careers', 'Info for parents'];
 const categories = ['Driving', 'Shooting', 'Sports', 'Adventure', 'Puzzle', 'Fighting', 'Management', 'Strategy', 'Educational'];
@@ -7,7 +7,7 @@ const categories = ['Driving', 'Shooting', 'Sports', 'Adventure', 'Puzzle', 'Fig
 function Footer() {
   return (
     <footer className="site-footer">
-      <div className="footer-folder-tab"><FaFolderOpen aria-hidden="true" /><span>Footer top</span></div>
+      <div className="footer-folder-tab"><img src="/Assets/Logo.png" alt="Play Pulse" /></div>
       <div className="footer-top-row">
         <a className="footer-brand" href="#top" aria-label="Play Pulse home">
           <img src="/Assets/Logo.png" alt="Play Pulse" />

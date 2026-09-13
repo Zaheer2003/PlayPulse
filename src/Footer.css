@@ -1,7 +1,7 @@
 .site-footer { background: #1c1c1c; border: 1px solid #383838; border-radius: 0 18px 0 0; color: var(--white); margin: 0 3vw 3vw; padding: 72px 2.5vw 24px; position: relative; }
 .site-footer::before { background: #1c1c1c; border: 1px solid #383838; border-bottom: 0; border-radius: 12px 12px 0 0; content: ''; height: 34px; left: -1px; position: absolute; top: -35px; width: 190px; }
-.footer-folder-tab { align-items: center; color: var(--primary); display: inline-flex; font-size: 11px; font-weight: 600; gap: 8px; left: 20px; letter-spacing: 1.2px; position: absolute; text-transform: uppercase; top: -24px; z-index: 1; }
-.footer-folder-tab svg { font-size: 17px; }
+.footer-folder-tab { display: inline-flex; left: 20px; position: absolute; top: -24px; z-index: 1; }
+.footer-folder-tab img { display: block; height: 32px; object-fit: contain; width: 32px; }
 .footer-top-row { padding-bottom: 58px; }
 .footer-main { border-top: 1px solid #303030; display: grid; gap: 5vw; grid-template-columns: 1.2fr minmax(220px, .8fr); padding: 44px 0 72px; }
 .footer-aside { min-width: 0; }
