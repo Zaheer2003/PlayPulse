@@ -1,10 +1,75 @@
 import './App.css';
-import { Bell, BookmarkSimple, CaretDown, MagnifyingGlass } from '@phosphor-icons/react';
+import {
+  Bell,
+  BoxingGlove,
+  BookmarkSimple,
+  CaretDown,
+  CirclesThreePlus,
+  Crosshair,
+  CrownCross,
+  CurrencyCircleDollar,
+  FacebookLogo,
+  Fire,
+  Football,
+  GraduationCap,
+  InstagramLogo,
+  MagnifyingGlass,
+  Mountains,
+  PuzzlePiece,
+  SquaresFour,
+  SteeringWheel,
+  UserList,
+  UsersThree,
+  XLogo,
+  YoutubeLogo,
+} from '@phosphor-icons/react';
 import Footer from './Footer';
+
+const sidebarPrimary = [
+  ['Dashboard', SquaresFour],
+  ['User list', UserList],
+  ['Fire', Fire],
+  ['Circles three plus', CirclesThreePlus],
+  ['Users three', UsersThree],
+];
+
+const sidebarCategories = [
+  ['Driving', SteeringWheel],
+  ['Shooting', Crosshair],
+  ['Sports', Football],
+  ['Adventure', Mountains],
+  ['Fighting', BoxingGlove],
+  ['Puzzle', PuzzlePiece],
+  ['Management', CrownCross],
+  ['Strategy', CurrencyCircleDollar],
+  ['Educational', GraduationCap],
+];
+
+const sidebarSocials = [
+  ['Facebook', FacebookLogo],
+  ['Instagram', InstagramLogo],
+  ['YouTube', YoutubeLogo],
+  ['X', XLogo],
+];
+
+function SidebarGroup({ items }) {
+  return items.map(([label, Icon]) => (
+    <a className="sidebar-link" href={`#${label.toLowerCase().replaceAll(' ', '-')}`} aria-label={label} title={label} key={label}>
+      <Icon aria-hidden="true" size={20} weight="regular" />
+    </a>
+  ));
+}
 
 function App() {
   return (
     <div className="site-shell">
+      <aside className="sidebar" aria-label="Browse Play Pulse">
+        <div className="sidebar-group"><SidebarGroup items={sidebarPrimary} /></div>
+        <div className="sidebar-divider" />
+        <div className="sidebar-group"><SidebarGroup items={sidebarCategories} /></div>
+        <div className="sidebar-divider" />
+        <div className="sidebar-group"><SidebarGroup items={sidebarSocials} /></div>
+      </aside>
       <nav className="navbar" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="Play Pulse home"><img src="/Assets/Logo.png" alt="Play Pulse" /></a>
         <form className="nav-search" role="search">
