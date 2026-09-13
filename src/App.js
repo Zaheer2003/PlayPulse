@@ -15,7 +15,10 @@ import {
   InstagramLogo,
   MagnifyingGlass,
   Mountains,
+  Play,
+  Plus,
   PuzzlePiece,
+  ArrowRight,
   SquaresFour,
   SteeringWheel,
   UserList,
@@ -86,19 +89,18 @@ function App() {
       </nav>
 
       <main id="top">
-        <section className="hero" aria-labelledby="hero-title">
-          <div className="hero-copy">
-            <p className="eyebrow"><span className="live-dot" /> Live now · 24,891 players</p>
-            <h1 id="hero-title">Find your next <em>favorite</em> game.</h1>
-            <p className="hero-description">A living space for people who play, discover, and share the games that keep their heart racing.</p>
-            <div className="hero-actions"><button className="primary-button" type="button">Explore games <span aria-hidden="true">↗</span></button><button className="text-button" type="button"><span className="play-icon" aria-hidden="true">▶</span> See how it works</button></div>
-            <div className="member-note"><div className="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>K</span><span>+</span></div><span>Joined by <strong>120k+</strong> players</span></div>
-          </div>
-          <div className="hero-art" aria-label="Featured game artwork"><div className="art-glow" /><div className="art-grid" /><div className="floating-tag tag-top">01 / 04 <span>FEATURED</span></div><div className="game-character"><div className="visor" /><div className="character-body" /><div className="character-arm arm-left" /><div className="character-arm arm-right" /></div><div className="game-card"><span className="card-kicker">PLAYLIST 014</span><strong>Into the<br /><i>unknown.</i></strong><span className="card-arrow">↗</span></div><div className="floating-tag tag-bottom"><span className="sound-wave">)))</span> curated for you</div></div>
-        </section>
+        <section className="dashboard-grid" aria-label="Play Pulse dashboard">
+          <article className="trailer-panel" id="games">
+            <div className="panel-heading"><div><p className="eyebrow">Trending now</p><h1 id="hero-title">Trending trailers</h1></div><span className="slide-count">01 / 04</span></div>
+            <div className="trailer-art"><img src="/Assets/Home Carousel 1.jpg" alt="Featured game trailer artwork" /><div className="trailer-overlay"><span className="trailer-kicker">Featured trailer</span><h2>Into the <em>unknown.</em></h2><p>Discover what the pulse is playing right now.</p><button className="play-trailer" type="button" aria-label="Play featured trailer"><Play weight="fill" /></button></div></div>
+            <div className="trailer-footer"><span>Hades II</span><span>Action · Adventure</span><a href="#games" aria-label="Next trailer"><ArrowRight /></a></div>
+          </article>
 
-        <section className="pulse-strip" id="games" aria-label="Trending games"><p>Trending through the pulse</p><div className="trend-list"><span>01 <b>Hades II</b></span><span>02 <b>Split Fiction</b></span><span>03 <b>Balatro</b></span><span>04 <b>Monster Hunter</b></span></div><a href="#playlists" className="round-arrow" aria-label="View trending games">↗</a></section>
-        <section className="community-section" id="community"><div><p className="eyebrow">More than a library</p><h2>Stay curious.<br /><em>Play together.</em></h2></div><p className="section-copy">Follow the people who get your taste, swap recommendations, and always have somewhere new to go next.</p><a className="outline-button" id="playlists" href="#top">Discover the community <span aria-hidden="true">↗</span></a></section>
+          <div className="dashboard-side">
+            <section className="hub-panel" id="community" aria-labelledby="hub-title"><div className="panel-heading compact"><div><p className="eyebrow">Find your people</p><h2 id="hub-title">Community hub</h2></div><a className="show-more" href="#community">Show more <ArrowRight /></a></div><p className="panel-description">See what players with your taste are discovering.</p><div className="profile-row"><div className="profile-card"><img src="/Assets/Ellipse 27.png" alt="Maya profile" /><strong>Maya</strong><span>Co-op fan</span></div><div className="profile-card"><img src="/Assets/Ellipse 27-1.png" alt="Jordan profile" /><strong>Jordan</strong><span>Indie hunter</span></div><div className="profile-card"><img src="/Assets/Ellipse 27-2.png" alt="Kai profile" /><strong>Kai</strong><span>RPG player</span></div></div></section>
+            <section className="channels-panel" id="playlists" aria-labelledby="channels-title"><div className="panel-heading compact"><div><p className="eyebrow">Curated for you</p><h2 id="channels-title">Discover channels</h2></div><a className="show-more" href="#playlists">Show more <ArrowRight /></a></div><div className="channel-row"><a className="channel-card" href="#strategy"><img src="/Assets/Indie Spotlight 1.png" alt="Indie spotlight channel" /><span>Indie spotlight</span><small>24 games</small></a><a className="channel-card" href="#multiplayer"><img src="/Assets/Indie Spotlight 2.png" alt="Multiplayer channel" /><span>Late-night co-op</span><small>18 games</small></a></div></section>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
