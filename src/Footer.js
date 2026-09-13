@@ -7,18 +7,18 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-top-row">
-        <div className="footer-intro">
-          <a className="footer-brand" href="#top" aria-label="Play Pulse home">
-            <img src="/Assets/Logo.png" alt="Play Pulse" />
-          </a>
-          <p>Discover your next favorite game, connect with fellow players, and keep your pulse on everything worth playing.</p>
-        </div>
+        <a className="footer-brand" href="#top" aria-label="Play Pulse home">
+          <img src="/Assets/Logo.png" alt="Play Pulse" />
+        </a>
 
-        <div className="social-links" aria-label="Social media links">
-          <a href="#facebook" aria-label="Facebook">f</a>
-          <a href="#instagram" aria-label="Instagram">◎</a>
-          <a href="#youtube" aria-label="YouTube">▶</a>
-          <a href="#x" aria-label="X">𝕏</a>
+        <div className="footer-info-row">
+          <p>Discover your next favorite game, connect with fellow players, and keep your pulse on everything worth playing.</p>
+          <div className="social-links" aria-label="Social media links">
+            <a href="#facebook" aria-label="Facebook">f</a>
+            <a href="#instagram" aria-label="Instagram">◎</a>
+            <a href="#youtube" aria-label="YouTube">▶</a>
+            <a href="#x" aria-label="X">𝕏</a>
+          </div>
         </div>
       </div>
 
