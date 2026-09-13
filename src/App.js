@@ -13,7 +13,7 @@ function App() {
         </form>
         <button className="icon-button menu-button" type="button" aria-label="Open menu">☰</button>
         <div className="nav-actions">
-          <button className="language-button" type="button" aria-label="Select language">Eng <FaChevronDown aria-hidden="true" /></button>
+          <button className="language-button" type="button" aria-label="Select language"><img src="/Assets/UK flag.png" alt="" /> Eng <FaChevronDown aria-hidden="true" /></button>
           <button className="nav-icon-button" type="button" aria-label="Saved games" title="Saved games"><FaBookmark aria-hidden="true" /></button>
           <button className="nav-icon-button" type="button" aria-label="Notifications" title="Notifications"><FaBell aria-hidden="true" /></button>
           <button className="login-button" type="button">Login</button>
