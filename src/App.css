@@ -7,8 +7,8 @@ a { color: inherit; text-decoration: none; }
 .site-shell { min-height: 100vh; overflow: hidden; background: var(--background); }
 .navbar { align-items: center; background: var(--surface); display: flex; height: 76px; justify-content: space-between; padding: 0 5.5vw; }
 .brand { align-items: center; display: flex; }
-.brand img { display: block; height: 42px; object-fit: contain; width: 42px; }
-.nav-search { align-items: center; border-bottom: 1px solid #555; display: flex; gap: 10px; margin-left: 11vw; width: min(250px, 28vw); }
+.brand img { display: block; height: 80px; object-fit: contain; width: 80px; }
+.nav-search { align-items: center; border: 1px solid #555; border-radius: 24px; display: flex; gap: 10px; margin-left: 11vw; padding: 0 14px; width: min(250px, 28vw); }
 .nav-search svg { color: #969696; font-size: 14px; }
 .nav-search input { background: transparent; border: 0; color: var(--white); font-size: 13px; outline: 0; padding: 9px 0; width: 100%; }
 .nav-search input::placeholder { color: #888; }

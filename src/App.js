@@ -8,8 +8,8 @@ function App() {
       <nav className="navbar" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="Play Pulse home"><img src="/Assets/Logo.png" alt="Play Pulse" /></a>
         <form className="nav-search" role="search">
-          <FaMagnifyingGlass aria-hidden="true" />
           <input type="search" placeholder="Search games" aria-label="Search games" />
+          <FaMagnifyingGlass aria-hidden="true" />
         </form>
         <button className="icon-button menu-button" type="button" aria-label="Open menu">☰</button>
         <div className="nav-actions">
