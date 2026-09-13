@@ -55,7 +55,7 @@ const sidebarSocials = [
 function SidebarGroup({ items }) {
   return items.map(([label, Icon]) => (
     <a className={`sidebar-link${label === 'Dashboard' ? ' active' : ''}`} href={`#${label.toLowerCase().replaceAll(' ', '-')}`} aria-label={label} title={label} key={label}>
-      <Icon aria-hidden="true" size={20} weight="regular" />
+      <Icon aria-hidden="true" size={20} weight={label === 'Dashboard' ? 'fill' : 'regular'} />
     </a>
   ));
 }
