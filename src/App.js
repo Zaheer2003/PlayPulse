@@ -64,7 +64,6 @@ function App() {
   return (
     <div className="site-shell">
       <aside className="sidebar" aria-label="Browse Play Pulse">
-        <a className="sidebar-brand" href="#top" aria-label="Play Pulse home"><img src="/Assets/Logo.png" alt="Play Pulse" /></a>
         <div className="sidebar-group"><SidebarGroup items={sidebarPrimary} /></div>
         <div className="sidebar-divider" />
         <div className="sidebar-group"><SidebarGroup items={sidebarCategories} /></div>
@@ -72,6 +71,7 @@ function App() {
         <div className="sidebar-group"><SidebarGroup items={sidebarSocials} /></div>
       </aside>
       <nav className="navbar" aria-label="Primary navigation">
+        <a className="brand" href="#top" aria-label="Play Pulse home"><img src="/Assets/Logo.png" alt="Play Pulse" /></a>
         <form className="nav-search" role="search">
           <input type="search" placeholder="Search games" aria-label="Search games" />
           <MagnifyingGlass aria-hidden="true" size={16} weight="regular" />
