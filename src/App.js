@@ -1,5 +1,5 @@
 import './App.css';
-import { FaBell, FaBookmark, FaChevronDown, FaMagnifyingGlass } from 'react-icons/fa6';
+import { Bell, BookmarkSimple, CaretDown, MagnifyingGlass } from '@phosphor-icons/react';
 import Footer from './Footer';
 
 function App() {
@@ -9,13 +9,13 @@ function App() {
         <a className="brand" href="#top" aria-label="Play Pulse home"><img src="/Assets/Logo.png" alt="Play Pulse" /></a>
         <form className="nav-search" role="search">
           <input type="search" placeholder="Search games" aria-label="Search games" />
-          <FaMagnifyingGlass aria-hidden="true" />
+          <MagnifyingGlass aria-hidden="true" size={16} weight="regular" />
         </form>
         <button className="icon-button menu-button" type="button" aria-label="Open menu">☰</button>
         <div className="nav-actions">
-          <button className="language-button" type="button" aria-label="Select language"><img src="/Assets/UK flag.png" alt="" /> Eng <FaChevronDown aria-hidden="true" /></button>
-          <button className="nav-icon-button" type="button" aria-label="Saved games" title="Saved games"><FaBookmark aria-hidden="true" /></button>
-          <button className="nav-icon-button" type="button" aria-label="Notifications" title="Notifications"><FaBell aria-hidden="true" /></button>
+          <button className="language-button" type="button" aria-label="Select language"><img src="/Assets/UK flag.png" alt="" /> Eng <CaretDown aria-hidden="true" size={12} weight="bold" /></button>
+          <button className="nav-icon-button" type="button" aria-label="Saved games" title="Saved games"><BookmarkSimple aria-hidden="true" size={17} weight="regular" /></button>
+          <button className="nav-icon-button" type="button" aria-label="Notifications" title="Notifications"><Bell aria-hidden="true" size={17} weight="regular" /></button>
           <button className="login-button" type="button">Login</button>
         </div>
       </nav>

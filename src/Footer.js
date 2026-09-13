@@ -1,5 +1,5 @@
 import './Footer.css';
-import { FaFacebookF, FaInstagram, FaYoutube, FaXTwitter } from 'react-icons/fa6';
+import { FacebookLogo, InstagramLogo, XLogo, YoutubeLogo } from '@phosphor-icons/react';
 
 const resources = ['About us', 'Developers', 'Careers', 'Info for parents'];
 const categories = ['Driving', 'Shooting', 'Sports', 'Adventure', 'Puzzle', 'Fighting', 'Management', 'Strategy', 'Educational'];
@@ -12,10 +12,10 @@ function Footer() {
         <div className="footer-info-row">
           <p>Discover your next favorite game, connect with fellow players, and keep your pulse on everything worth playing.</p>
           <div className="social-links" aria-label="Social media links">
-            <a href="#facebook" aria-label="Facebook" title="Facebook"><FaFacebookF /></a>
-            <a href="#instagram" aria-label="Instagram" title="Instagram"><FaInstagram /></a>
-            <a href="#youtube" aria-label="YouTube" title="YouTube"><FaYoutube /></a>
-            <a href="#x" aria-label="X" title="X"><FaXTwitter /></a>
+            <a href="#facebook" aria-label="Facebook" title="Facebook"><FacebookLogo size={18} weight="regular" /></a>
+            <a href="#instagram" aria-label="Instagram" title="Instagram"><InstagramLogo size={18} weight="regular" /></a>
+            <a href="#youtube" aria-label="YouTube" title="YouTube"><YoutubeLogo size={18} weight="regular" /></a>
+            <a href="#x" aria-label="X" title="X"><XLogo size={18} weight="regular" /></a>
           </div>
         </div>
       </div>
