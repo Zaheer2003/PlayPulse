@@ -9,10 +9,6 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-folder-tab"><img src="/Assets/Logo.png" alt="Play Pulse" /></div>
       <div className="footer-top-row">
-        <a className="footer-brand" href="#top" aria-label="Play Pulse home">
-          <img src="/Assets/Logo.png" alt="Play Pulse" />
-        </a>
-
         <div className="footer-info-row">
           <p>Discover your next favorite game, connect with fellow players, and keep your pulse on everything worth playing.</p>
           <div className="social-links" aria-label="Social media links">
