@@ -2,8 +2,8 @@
 .site-footer::before { background: #1c1c1c; border: 1px solid #383838; border-bottom: 0; border-radius: 12px 12px 0 0; content: ''; height: 129px; left: -1px; position: absolute; top: -130px; width: 170px; }
 .footer-folder-tab { display: inline-flex; left: 20px; position: absolute; top: -120px; z-index: 1; }
 .footer-folder-tab img { display: block; height: 125px; object-fit: contain; width: 125px; }
-.footer-top-row { padding-bottom: 58px; }
-.footer-main { border-top: 1px solid #303030; display: grid; gap: 5vw; grid-template-columns: 1.2fr minmax(220px, .8fr); padding: 44px 0 72px; }
+.footer-top-row { padding-bottom: 0; }
+.footer-main { border-top: 1px solid #303030; display: grid; gap: 5vw; grid-template-columns: 1.2fr minmax(220px, .8fr); padding: 0 0 72px; }
 .footer-aside { min-width: 0; }
 .footer-brand { display: inline-flex; }
 .footer-brand img { height: 100px; object-fit: contain; width: 100px; }
@@ -18,7 +18,8 @@
 .footer-link-column > a:hover, .category-links a:hover, .legal-links a:hover { color: var(--primary); }
 .category-links { display: grid; grid-template-columns: repeat(3, minmax(90px, 1fr)); }
 .footer-app-row { margin-top: 36px; padding-top: 0; }
-.footer-kicker { color: var(--primary); font-size: 11px; letter-spacing: 1px; margin: 0 0 16px; text-transform: uppercase; }
+.footer-kicker { color: var(--primary); font-size: 11px; font-weight: 700; letter-spacing: 1px; margin: 0 0 8px; text-transform: uppercase; }
+.footer-app-title { color: #f1f1f1; font-size: 14px; margin: 0 0 18px; }
 .store-badges { align-items: center; display: flex; gap: 10px; }
 .store-badges a { display: block; }
 .store-badges img { display: block; height: 38px; object-fit: contain; width: auto; }

@@ -37,6 +37,7 @@ function Footer() {
         <div className="footer-aside">
           <div className="footer-app-row">
             <p className="footer-kicker">Play anywhere, play instantly.</p>
+            <p className="footer-app-title">Get our app on your favourite platform.</p>
             <div className="store-badges" aria-label="Download Play Pulse">
               <a href="#app-store" aria-label="Download on the App Store"><img src="/Assets/App store.png" alt="App Store" /></a>
               <a href="#microsoft-store" aria-label="Get it from Microsoft"><img src="/Assets/Microsoft.png" alt="Microsoft" /></a>
