@@ -18,8 +18,8 @@
 .footer-link-column > a:hover, .category-links a:hover, .legal-links a:hover { color: var(--primary); }
 .category-links { display: grid; grid-template-columns: repeat(3, minmax(90px, 1fr)); }
 .footer-app-row { margin-top: 36px; padding-top: 0; }
-.footer-kicker { color: var(--white); font-size: 15px; font-weight: 700; letter-spacing: 1px; margin: 0 0 8px; text-transform: uppercase; }
-.footer-app-title { color: #f1f1f1; font-size: 12px; margin: 0 0 18px; }
+.footer-kicker { color: var(--white); font-size: 15px; font-weight: 700; letter-spacing: 1px; margin: 0 0 8px; }
+.footer-app-title { color: #969696; font-size: 13px; line-height: 1.7; margin: 0 0 18px; }
 .store-badges { align-items: center; display: flex; gap: 10px; justify-content: flex-end; }
 .store-badges a { display: block; }
 .store-badges img { display: block; height: 38px; object-fit: contain; width: auto; }
