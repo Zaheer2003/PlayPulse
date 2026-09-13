@@ -1,4 +1,5 @@
 import './Footer.css';
+import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 
 const resources = ['About us', 'Developers', 'Careers', 'Info for parents'];
 const categories = ['Driving', 'Shooting', 'Sports', 'Adventure', 'Puzzle', 'Fighting', 'Management', 'Strategy', 'Educational'];
@@ -14,10 +15,10 @@ function Footer() {
         <div className="footer-info-row">
           <p>Discover your next favorite game, connect with fellow players, and keep your pulse on everything worth playing.</p>
           <div className="social-links" aria-label="Social media links">
-            <a href="#facebook" aria-label="Facebook">f</a>
-            <a href="#instagram" aria-label="Instagram">◎</a>
-            <a href="#youtube" aria-label="YouTube">▶</a>
-            <a href="#x" aria-label="X">𝕏</a>
+            <a href="#facebook" aria-label="Facebook" title="Facebook"><Facebook size={17} strokeWidth={1.8} /></a>
+            <a href="#instagram" aria-label="Instagram" title="Instagram"><Instagram size={17} strokeWidth={1.8} /></a>
+            <a href="#youtube" aria-label="YouTube" title="YouTube"><Youtube size={17} strokeWidth={1.8} /></a>
+            <a href="#x" aria-label="X" title="X"><Twitter size={17} strokeWidth={1.8} /></a>
           </div>
         </div>
       </div>
