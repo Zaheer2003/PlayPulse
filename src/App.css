@@ -94,7 +94,8 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .trending-wrapper { background: linear-gradient(135deg, #2a0d14 0%, #0d0d0d 50%, #1a0508 100%); border: 1px solid rgba(252,99,126,.2); border-radius: 18px; display: grid; gap: 16px; grid-template-columns: repeat(5, 1fr); overflow: hidden; padding: 16px; }
 .trending-card { display: flex; flex-direction: column; gap: 12px; }
 .trending-card:last-child { border-right: 0; }
-.trending-card > img { border-radius: 10px; height: 180px; object-fit: cover; object-position: center; width: 100%; }
+.trending-card-img { border-radius: 10px; height: 180px; overflow: hidden; }
+.trending-card-img img { height: 100%; object-fit: cover; object-position: center; width: 100%; }
 .trending-card-name-row { align-items: center; display: flex; justify-content: space-between; padding: 0 14px; }
 .trending-card-name-row h3 { color: #fff; font-size: 13px; font-weight: 600; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .trending-rating { align-items: center; color: #f5c451; display: inline-flex; font-size: 12px; font-weight: 600; gap: 4px; }

@@ -162,7 +162,7 @@ function App() {
                 { img: '/Assets/Trending%205.png', title: "Assassin's Creed Valhalla", desc: 'Lead Viking raids across England in this epic open-world adventure.', rating: '4.8' },
               ].map((game) => (
                 <div className="trending-card" key={game.title}>
-                  <img src={game.img} alt={game.title} />
+                  <div className="trending-card-img"><img src={game.img} alt={game.title} /></div>
                   <div className="trending-card-name-row">
                     <h3>{game.title}</h3>
                     <span className="trending-rating"><Star weight="fill" /> {game.rating}/5</span>
