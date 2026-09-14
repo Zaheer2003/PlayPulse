@@ -238,13 +238,11 @@ function App() {
           </div>
           <p className="indie-section-desc">Discover handpicked indie gems that push the boundaries of storytelling, art, and gameplay. These titles prove that the best experiences don't always come from the biggest studios.</p>
           <div className="indie-content">
-            <div className="indie-col-img">
-              <div className="indie-card">
+            <div className="indie-col-main">
+              <div className="indie-col-img">
                 <img src="/Assets/Indie%20Spotlight%201.png" alt="Ghost of Tsushima" />
               </div>
-            </div>
-            <div className="indie-col-detail">
-              <div className="indie-detail-card">
+              <div className="indie-col-detail">
                 <h3 className="indie-game-title">Ghost of Tsushima</h3>
                 <span className="indie-release">Release Date: November 18, 2021</span>
                 <p className="indie-desc">A breathtaking open-world samurai epic set in feudal Japan, where honor and survival collide against the Mongol invasion.</p>
