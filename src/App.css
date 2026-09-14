@@ -90,9 +90,8 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .trending-header { margin-bottom: 32px; }
 .trending-header h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 500; letter-spacing: -1.5px; line-height: 1; margin: 0; }
 .trending-header h2 em { color: var(--primary); font-style: normal; }
-.trending-list { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 10px; scrollbar-width: none; }
-.trending-list::-webkit-scrollbar { display: none; }
-.trending-card { background: linear-gradient(135deg, #2a1a1e 0%, #1a0d10 50%, #2d1520 100%); border: 1px solid rgba(252,99,126,.15); border-radius: 14px; display: flex; flex-direction: column; flex-shrink: 0; overflow: hidden; width: 240px; }
+.trending-list { display: grid; gap: 20px; grid-template-columns: repeat(5, 1fr); }
+.trending-card { background: linear-gradient(135deg, #2a1a1e 0%, #1a0d10 50%, #2d1520 100%); border: 1px solid rgba(252,99,126,.15); border-radius: 14px; display: flex; flex-direction: column; overflow: hidden; }
 .trending-card img { height: 150px; object-fit: cover; width: 100%; }
 .trending-card-body { display: flex; flex-direction: column; flex: 1; gap: 8px; padding: 16px; }
 .trending-card-body h3 { color: #fff; font-size: 15px; font-weight: 600; letter-spacing: -0.3px; margin: 0; }

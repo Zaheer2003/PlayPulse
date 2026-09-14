@@ -111,11 +111,6 @@ function App() {
               { img: '/Assets/Trending 3.png', title: 'NFS: Shift', desc: 'High-octane street racing with precision handling and roaring engines.', rating: '4.5' },
               { img: '/Assets/Trending 4.png', title: 'Warface', desc: 'Fast-paced online tactical shooter with intense multiplayer combat.', rating: '4.4' },
               { img: '/Assets/Trending 5.png', title: "Assassin's Creed Valhalla", desc: 'Lead Viking raids across England in this epic open-world adventure.', rating: '4.8' },
-              { img: '/Assets/Trending 1.png', title: 'Darkwood II', desc: 'Deeper into the woods — new horrors, new secrets, no escape.', rating: '4.6' },
-              { img: '/Assets/Trending 2.png', title: "Assassin's Creed II", desc: 'Step into Renaissance Italy as Ezio Auditore, a legendary assassin.', rating: '4.9' },
-              { img: '/Assets/Trending 3.png', title: 'NFS: Heat', desc: 'Race by day, risk it all in illegal street races by night.', rating: '4.5' },
-              { img: '/Assets/Trending 4.png', title: 'Warface: Breakout', desc: 'Squad-based tactical combat with high-stakes competitive gameplay.', rating: '4.3' },
-              { img: '/Assets/Trending 5.png', title: 'AC: Odyssey', desc: 'Forge your legend in ancient Greece in this sprawling RPG epic.', rating: '4.7' },
             ].map((game) => (
               <div className="trending-card" key={game.title}>
                 <img src={game.img} alt={game.title} />
