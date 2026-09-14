@@ -135,19 +135,22 @@ function App() {
           </div>
           <div className="categories-grid">
             {[
-              ['Driving', SteeringWheel],
-              ['Shooting', Crosshair],
-              ['Sports', Football],
-              ['Adventure', Mountains],
-              ['Fighting', BoxingGlove],
-              ['Puzzle', PuzzlePiece],
-              ['Management', CrownCross],
-              ['Strategy', CurrencyCircleDollar],
-              ['Educational', GraduationCap],
-            ].map(([label, Icon]) => (
+              ['Driving', SteeringWheel, '124 Games'],
+              ['Shooting', Crosshair, '98 Games'],
+              ['Sports', Football, '76 Games'],
+              ['Adventure', Mountains, '112 Games'],
+              ['Fighting', BoxingGlove, '89 Games'],
+              ['Puzzle', PuzzlePiece, '65 Games'],
+              ['Management', CrownCross, '54 Games'],
+              ['Strategy', CurrencyCircleDollar, '71 Games'],
+              ['Educational', GraduationCap, '43 Games'],
+            ].map(([label, Icon, count]) => (
               <a className="category-card" href={`#${label.toLowerCase()}`} key={label}>
                 <div className="category-icon"><Icon size={28} weight="regular" /></div>
-                <span>{label}</span>
+                <div className="category-info">
+                  <span className="category-name">{label}</span>
+                  <span className="category-count">{count}</span>
+                </div>
               </a>
             ))}
           </div>
