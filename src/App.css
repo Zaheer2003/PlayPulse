@@ -133,11 +133,22 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .indie-line { background: var(--primary); flex: 1; height: 1px; }
 .indie-divider-header h2 { color: #fff; font-size: clamp(20px, 2.5vw, 30px); font-weight: 500; letter-spacing: -1px; margin: 0; white-space: nowrap; }
 .indie-divider-header h2 em { color: var(--primary); font-style: normal; }
-.indie-content { align-items: center; display: grid; gap: 60px; grid-template-columns: 1fr 1.4fr; }
-.indie-left { display: flex; flex-direction: column; gap: 16px; text-align: center; }
-.indie-kicker { color: var(--primary); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
-.indie-left p { color: #888; font-size: 14px; line-height: 1.7; margin: 0; }
+.indie-content { align-items: start; display: grid; gap: 50px; grid-template-columns: 1.2fr 1fr; }
 .indie-right { display: flex; flex-direction: column; gap: 16px; }
+.indie-left { display: flex; flex-direction: column; gap: 14px; }
+.indie-kicker { color: var(--primary); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.indie-game-title { color: #fff; font-size: clamp(22px, 2.5vw, 32px); font-weight: 600; letter-spacing: -1px; margin: 0; }
+.indie-release { color: #666; font-size: 12px; }
+.indie-desc { color: #888; font-size: 13px; line-height: 1.7; margin: 0; }
+.indie-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.indie-tag { background: rgba(252,99,126,.1); border: 1px solid rgba(252,99,126,.25); border-radius: 50px; color: var(--primary); font-size: 11px; padding: 4px 12px; }
+.indie-rating-row { align-items: center; display: flex; gap: 10px; }
+.indie-rating { align-items: center; color: #f5c451; display: inline-flex; font-size: 16px; font-weight: 700; gap: 6px; }
+.indie-rating svg { font-size: 16px; }
+.indie-platforms { align-items: center; display: flex; gap: 12px; }
+.indie-platforms-label { color: #666; font-size: 12px; }
+.indie-platforms svg { color: #aaa; }
+.indie-play-btn { align-self: flex-start; margin-top: 6px; }
 .indie-card { border-radius: 16px; overflow: hidden; position: relative; }
 .indie-card img { display: block; height: 340px; object-fit: cover; width: 100%; }
 .indie-card::after { background: linear-gradient(0deg, rgba(0,0,0,.85) 0%, transparent 55%); content: ''; inset: 0; position: absolute; }
