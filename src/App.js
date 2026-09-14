@@ -182,17 +182,17 @@ function App() {
           </div>
           <div className="categories-grid">
             {[
-              ['Driving', SteeringWheel, '124 Games'],
-              ['Shooting', Crosshair, '98 Games'],
-              ['Sports', Football, '76 Games'],
-              ['Adventure', Mountains, '112 Games'],
-              ['Fighting', BoxingGlove, '89 Games'],
-              ['Puzzle', PuzzlePiece, '65 Games'],
-              ['Management', CrownCross, '54 Games'],
-              ['Strategy', CurrencyCircleDollar, '71 Games'],
-              ['Educational', GraduationCap, '43 Games'],
-            ].map(([label, Icon, count]) => (
-              <a className="category-card" href={`#${label.toLowerCase()}`} key={label}>
+              ['Driving', SteeringWheel, '124 Games', '#47d7ff'],
+              ['Shooting', Crosshair, '98 Games', '#EA50A3'],
+              ['Sports', Football, '76 Games', '#83FACB'],
+              ['Adventure', Mountains, '112 Games', '#E8CB3E'],
+              ['Fighting', BoxingGlove, '89 Games', '#B4F54E'],
+              ['Puzzle', PuzzlePiece, '65 Games', '#EB7A54'],
+              ['Management', CrownCross, '54 Games', '#FFFFFF'],
+              ['Strategy', CurrencyCircleDollar, '71 Games', '#A866FF'],
+              ['Educational', GraduationCap, '43 Games', '#FF5656'],
+            ].map(([label, Icon, count, color]) => (
+              <a className="category-card" href={`#${label.toLowerCase()}`} key={label} style={{'--cat-color': color}}>
                 <div className="category-icon"><Icon size={38} weight="regular" /></div>
                 <div className="category-info">
                   <span className="category-name">{label}</span>
