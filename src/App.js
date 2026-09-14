@@ -109,11 +109,11 @@ function App() {
           <div className="trending-list">
             <div className="trending-wrapper">
             {[
-              { img: '/Assets/Trending 1.png', title: 'Darkwood', desc: 'A terrifying survival horror set in a mysterious, ever-changing forest.', rating: '4.6' },
-              { img: '/Assets/Trending 2.png', title: "Assassin's Creed", desc: 'Relive the Crusades as a master assassin in a vast open world.', rating: '4.7' },
-              { img: '/Assets/Trending 3.png', title: 'NFS: Shift', desc: 'High-octane street racing with precision handling and roaring engines.', rating: '4.5' },
-              { img: '/Assets/Trending 4.png', title: 'Warface', desc: 'Fast-paced online tactical shooter with intense multiplayer combat.', rating: '4.4' },
-              { img: '/Assets/Trending 5.png', title: "Assassin's Creed Valhalla", desc: 'Lead Viking raids across England in this epic open-world adventure.', rating: '4.8' },
+              { img: '/Assets/Trending%201.png', title: 'Darkwood', desc: 'A terrifying survival horror set in a mysterious, ever-changing forest.', rating: '4.6' },
+              { img: '/Assets/Trending%20%202.png', title: "Assassin's Creed", desc: 'Relive the Crusades as a master assassin in a vast open world.', rating: '4.7' },
+              { img: '/Assets/Trending%203.png', title: 'NFS: Shift', desc: 'High-octane street racing with precision handling and roaring engines.', rating: '4.5' },
+              { img: '/Assets/Trending%20%204.png', title: 'Warface', desc: 'Fast-paced online tactical shooter with intense multiplayer combat.', rating: '4.4' },
+              { img: '/Assets/Trending%205.png', title: "Assassin's Creed Valhalla", desc: 'Lead Viking raids across England in this epic open-world adventure.', rating: '4.8' },
             ].map((game) => (
               <div className="trending-card" key={game.title}>
                 <img src={game.img} alt={game.title} />
@@ -206,22 +206,22 @@ function App() {
           <div className="three-col-grid">
             {[
               { title: 'New Release', games: [
-                { img: '/Assets/New release (1).png', name: 'Ghostbusters: Spirits Unleashed', desc: 'A fast-paced cyberpunk slasher.', rating: '4.5' },
-                { img: '/Assets/New release (2).png', name: 'God of War', desc: 'Race through the cosmos at light speed.', rating: '4.3' },
-                { img: '/Assets/New release (3).png', name: 'Days Gone', desc: 'Dark fantasy RPG with brutal combat.', rating: '4.6' },
-                { img: '/Assets/New release (4).png', name: 'God of War 4', desc: 'Survive the endless void alone.', rating: '4.2' },
+                { img: '/Assets/New%20release%20(1).png', name: 'Ghostbusters: Spirits Unleashed', desc: 'A fast-paced cyberpunk slasher.', rating: '4.5' },
+                { img: '/Assets/New%20release%20(2).png', name: 'God of War', desc: 'Race through the cosmos at light speed.', rating: '4.3' },
+                { img: '/Assets/New%20release%20(3).png', name: 'Days Gone', desc: 'Dark fantasy RPG with brutal combat.', rating: '4.6' },
+                { img: '/Assets/New%20release%20(4).png', name: 'God of War 4', desc: 'Survive the endless void alone.', rating: '4.2' },
               ]},
               { title: 'Most Played', games: [
-                { img: '/Assets/Most played (1).png', name: 'Iron Clash', desc: 'Massive multiplayer tank warfare.', rating: '4.7' },
-                { img: '/Assets/Most played (2).png', name: 'Storm Arena', desc: 'Battle royale in a raging storm.', rating: '4.6' },
-                { img: '/Assets/Most played (3).png', name: 'Dark Nexus', desc: 'Hack and slash through dark realms.', rating: '4.5' },
-                { img: '/Assets/Most played (4).png', name: 'Blaze Squad', desc: 'Co-op shooter with explosive action.', rating: '4.4' },
+                { img: '/Assets/Most%20played%20(1).png', name: 'Iron Clash', desc: 'Massive multiplayer tank warfare.', rating: '4.7' },
+                { img: '/Assets/Most%20played%20(2).png', name: 'Storm Arena', desc: 'Battle royale in a raging storm.', rating: '4.6' },
+                { img: '/Assets/Most%20played%20(3).png', name: 'Dark Nexus', desc: 'Hack and slash through dark realms.', rating: '4.5' },
+                { img: '/Assets/Most%20played%20(4).png', name: 'Blaze Squad', desc: 'Co-op shooter with explosive action.', rating: '4.4' },
               ]},
               { title: 'Top Rated', games: [
-                { img: '/Assets/Top rated (1).png', name: 'Dota 2', desc: 'Puzzle adventure in a mirrored world.', rating: '4.9' },
-                { img: '/Assets/Top rated (2).png', name: "Assassin's Creed Mirage", desc: 'Defend your city in neon-lit chaos.', rating: '4.8' },
-                { img: '/Assets/Top rated (3).png', name: 'Uncharted: Legacy of Thieves', desc: 'Command an army across frozen lands.', rating: '4.8' },
-                { img: '/Assets/Top rated (4).png', name: 'Evil Dead: The Game', desc: 'Claim the throne in this epic RPG.', rating: '4.7' },
+                { img: '/Assets/Top%20rated%20(1).png', name: 'Dota 2', desc: 'Puzzle adventure in a mirrored world.', rating: '4.9' },
+                { img: '/Assets/Top%20rated%20(2).png', name: "Assassin's Creed Mirage", desc: 'Defend your city in neon-lit chaos.', rating: '4.8' },
+                { img: '/Assets/Top%20rated%20(3).png', name: 'Uncharted: Legacy of Thieves', desc: 'Command an army across frozen lands.', rating: '4.8' },
+                { img: '/Assets/Top%20rated%20(4).png', name: 'Evil Dead: The Game', desc: 'Claim the throne in this epic RPG.', rating: '4.7' },
               ]},
             ].map((col) => (
               <div className="three-col" key={col.title}>
