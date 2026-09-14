@@ -91,44 +91,91 @@ function App() {
       </nav>
 
       <main id="top">
+        {/* Hero / Dashboard */}
         <section className="dashboard-grid" aria-label="Play Pulse dashboard">
           <article className="trailer-panel" id="games">
-            <div className="trailer-art"><img src="/Assets/Home Carousel 1.jpg" alt="The Blood of Dawn Walker trailer artwork" /><div className="trailer-overlay"><div className="trailer-overlay-header"><span className="trailer-kicker">#Trending</span><h2>The Blood of <em style={{color:'#fff'}}>Dawn Walker</em></h2></div><p>Enter a dark, mythic adventure and fight your way through a world shaped by ancient power.</p><div style={{marginTop:'30px'}} className="trailer-actions"><button className="play-now-button" type="button"><Play weight="regular" /> Play now</button><button className="save-trailer-button" type="button" aria-label="Save The Blood of Dawn Walker" title="Save trailer"><BookmarkSimple weight="regular" /></button></div></div><div className="trailer-bottom-meta"><div className="watch-preview"><img src="/Assets/Home Carousel 2.jpg" alt="Trailer preview" /><span>Watch trailer</span><Play weight="fill" /></div><div className="trailer-stats"><span className="rating-stat"><Star weight="fill" /> 4.8/5</span><span className="watch-stat"><span className="stat-dot" /> 13,419,785 play times</span></div></div><div className="carousel-controls"><div className="carousel-dots" aria-label="Carousel slide position"><span className="active" /><span /><span /></div></div></div>
+            <div className="trailer-art">
+              <img src="/Assets/Home Carousel 1.jpg" alt="The Blood of Dawn Walker trailer artwork" />
+              <div className="trailer-overlay">
+                <div className="trailer-overlay-header">
+                  <span className="trailer-kicker">#Trending</span>
+                  <h2>The Blood of <em style={{color:'#fff'}}>Dawn Walker</em></h2>
+                </div>
+                <p>Enter a dark, mythic adventure and fight your way through a world shaped by ancient power.</p>
+                <div style={{marginTop:'30px'}} className="trailer-actions">
+                  <button className="play-now-button" type="button"><Play weight="regular" /> Play now</button>
+                  <button className="save-trailer-button" type="button" aria-label="Save The Blood of Dawn Walker" title="Save trailer"><BookmarkSimple weight="regular" /></button>
+                </div>
+              </div>
+              <div className="trailer-bottom-meta">
+                <div className="watch-preview">
+                  <img src="/Assets/Home Carousel 2.jpg" alt="Trailer preview" />
+                  <span>Watch trailer</span>
+                  <Play weight="fill" />
+                </div>
+                <div className="trailer-stats">
+                  <span className="rating-stat"><Star weight="fill" /> 4.8/5</span>
+                  <span className="watch-stat"><span className="stat-dot" /> 13,419,785 play times</span>
+                </div>
+              </div>
+              <div className="carousel-controls">
+                <div className="carousel-dots" aria-label="Carousel slide position">
+                  <span className="active" /><span /><span />
+                </div>
+              </div>
+            </div>
           </article>
 
           <div className="dashboard-side">
-            <section className="hub-panel" id="community" aria-labelledby="hub-title"><div className="panel-heading compact"><div><h2 id="hub-title">Community hub</h2></div></div><div className="profile-row"><div className="profile-card"><img src="/Assets/Ellipse 27.png" alt="Maya profile" /><div className="profile-info"><strong>Maya</strong><span>The Blood of Dawn Walker</span></div><button className="live-button" type="button"><span />Live</button></div><div className="profile-card"><img src="/Assets/Ellipse 27-1.png" alt="Jordan profile" /><div className="profile-info"><strong>Jordan</strong><span>Hades II</span></div><button className="live-button" type="button"><span />Live</button></div><div className="profile-card"><img src="/Assets/Ellipse 27-2.png" alt="Kai profile" /><div className="profile-info"><strong>Kai</strong><span>Split Fiction</span></div><button className="live-button" type="button"><span />Live</button></div></div><a className="show-more community-show-more" href="#community">Show more <ArrowRight /></a></section>
-            <section className="channels-panel" id="playlists" aria-labelledby="channels-title"><div className="panel-heading compact"><div><h2 id="channels-title">Discover channels</h2></div></div><div className="channel-row"><div className="channel-card"><img src="/Assets/Indie Spotlight 1.png" alt="Indie spotlight channel" /><div className="channel-info"><strong>Indie spotlight</strong><small>24 games</small></div><button className="join-button" type="button">Join</button></div><div className="channel-card"><img src="/Assets/Indie Spotlight 2.png" alt="Late-night co-op channel" /><div className="channel-info"><strong>Late-night co-op</strong><small>18 games</small></div><button className="join-button" type="button">Join</button></div></div><a className="show-more channel-show-more" href="#playlists">Show more <ArrowRight /></a></section>
+            <section className="hub-panel" id="community" aria-labelledby="hub-title">
+              <div className="panel-heading compact"><div><h2 id="hub-title">Community hub</h2></div></div>
+              <div className="profile-row">
+                <div className="profile-card"><img src="/Assets/Ellipse 27.png" alt="Maya profile" /><div className="profile-info"><strong>Maya</strong><span>The Blood of Dawn Walker</span></div><button className="live-button" type="button"><span />Live</button></div>
+                <div className="profile-card"><img src="/Assets/Ellipse 27-1.png" alt="Jordan profile" /><div className="profile-info"><strong>Jordan</strong><span>Hades II</span></div><button className="live-button" type="button"><span />Live</button></div>
+                <div className="profile-card"><img src="/Assets/Ellipse 27-2.png" alt="Kai profile" /><div className="profile-info"><strong>Kai</strong><span>Split Fiction</span></div><button className="live-button" type="button"><span />Live</button></div>
+              </div>
+              <a className="show-more community-show-more" href="#community">Show more <ArrowRight /></a>
+            </section>
+            <section className="channels-panel" id="playlists" aria-labelledby="channels-title">
+              <div className="panel-heading compact"><div><h2 id="channels-title">Discover channels</h2></div></div>
+              <div className="channel-row">
+                <div className="channel-card"><img src="/Assets/Indie Spotlight 1.png" alt="Indie spotlight channel" /><div className="channel-info"><strong>Indie spotlight</strong><small>24 games</small></div><button className="join-button" type="button">Join</button></div>
+                <div className="channel-card"><img src="/Assets/Indie Spotlight 2.png" alt="Late-night co-op channel" /><div className="channel-info"><strong>Late-night co-op</strong><small>18 games</small></div><button className="join-button" type="button">Join</button></div>
+              </div>
+              <a className="show-more channel-show-more" href="#playlists">Show more <ArrowRight /></a>
+            </section>
           </div>
         </section>
 
+        {/* Trending Games */}
         <section className="trending-section" aria-labelledby="trending-title">
           <div className="trending-header">
             <h2 id="trending-title">Trending <em>Games</em></h2>
           </div>
           <div className="trending-list">
             <div className="trending-wrapper">
-            {[
-              { img: '/Assets/Trending%201.png', title: 'Darkwood', desc: 'A terrifying survival horror set in a mysterious, ever-changing forest.', rating: '4.6' },
-              { img: '/Assets/Trending%20%202.png', title: "Assassin's Creed", desc: 'Relive the Crusades as a master assassin in a vast open world.', rating: '4.7' },
-              { img: '/Assets/Trending%203.png', title: 'NFS: Shift', desc: 'High-octane street racing with precision handling and roaring engines.', rating: '4.5' },
-              { img: '/Assets/Trending%20%204.png', title: 'Warface', desc: 'Fast-paced online tactical shooter with intense multiplayer combat.', rating: '4.4' },
-              { img: '/Assets/Trending%205.png', title: "Assassin's Creed Valhalla", desc: 'Lead Viking raids across England in this epic open-world adventure.', rating: '4.8' },
-            ].map((game) => (
-              <div className="trending-card" key={game.title}>
-                <img src={game.img} alt={game.title} />
-                <div className="trending-card-name-row">
-                  <h3>{game.title}</h3>
-                  <span className="trending-rating"><Star weight="fill" /> {game.rating}/5</span>
+              {[
+                { img: '/Assets/Trending%201.png', title: 'Darkwood', desc: 'A terrifying survival horror set in a mysterious, ever-changing forest.', rating: '4.6' },
+                { img: '/Assets/Trending%20%202.png', title: "Assassin's Creed", desc: 'Relive the Crusades as a master assassin in a vast open world.', rating: '4.7' },
+                { img: '/Assets/Trending%203.png', title: 'NFS: Shift', desc: 'High-octane street racing with precision handling and roaring engines.', rating: '4.5' },
+                { img: '/Assets/Trending%20%204.png', title: 'Warface', desc: 'Fast-paced online tactical shooter with intense multiplayer combat.', rating: '4.4' },
+                { img: '/Assets/Trending%205.png', title: "Assassin's Creed Valhalla", desc: 'Lead Viking raids across England in this epic open-world adventure.', rating: '4.8' },
+              ].map((game) => (
+                <div className="trending-card" key={game.title}>
+                  <img src={game.img} alt={game.title} />
+                  <div className="trending-card-name-row">
+                    <h3>{game.title}</h3>
+                    <span className="trending-rating"><Star weight="fill" /> {game.rating}/5</span>
+                  </div>
+                  <p>{game.desc}</p>
+                  <button className="play-now-button" type="button">Play now</button>
                 </div>
-                <p>{game.desc}</p>
-                <button className="play-now-button" type="button">Play now</button>
-              </div>
-            ))}
+              ))}
             </div>
           </div>
         </section>
 
+        {/* Browse Categories */}
         <section className="categories-section" aria-labelledby="categories-title">
           <div className="categories-header">
             <h2 id="categories-title">Browse <em>Categories</em></h2>
@@ -156,15 +203,16 @@ function App() {
           </div>
         </section>
 
+        {/* Upcoming Games */}
         <section className="upcoming-section" aria-labelledby="upcoming-title">
           <div className="upcoming-header">
             <h2 id="upcoming-title">Upcoming <em>Games</em></h2>
           </div>
           <div className="upcoming-grid">
             {[
-              { img: '/Assets/Upcoming 1.png', title: 'Uncharted 4', desc: 'A haunting action RPG set in a fractured world between life and shadow.', price: 'LKR 3,999' },
-              { img: '/Assets/Upcoming 2.png', title: 'FC 26', desc: 'Command massive war machines in an epic futuristic battlefield.', price: 'LKR 4,999' },
-              { img: '/Assets/Upcoming 3.png', title: 'RDR2', desc: 'A sci-fi stealth thriller where every choice reshapes the galaxy.', price: 'LKR 4,499' },
+              { img: '/Assets/Upcoming%201.png', title: 'Uncharted 4', desc: 'A haunting action RPG set in a fractured world between life and shadow.', price: 'LKR 3,999' },
+              { img: '/Assets/Upcoming%202.png', title: 'FC 26', desc: 'Command massive war machines in an epic futuristic battlefield.', price: 'LKR 4,999' },
+              { img: '/Assets/Upcoming%203.png', title: 'RDR2', desc: 'A sci-fi stealth thriller where every choice reshapes the galaxy.', price: 'LKR 4,499' },
             ].map((game) => (
               <div className="upcoming-card" key={game.title}>
                 <img src={game.img} alt={game.title} />
@@ -181,27 +229,35 @@ function App() {
           </div>
         </section>
 
+        {/* Indie Spotlight */}
         <section className="indie-section" aria-labelledby="indie-title">
-          <div className="indie-left">
-            <span className="indie-kicker">Featured</span>
+          <div className="indie-divider-header">
+            <span className="indie-line" />
             <h2 id="indie-title">Indie <em>Spotlight</em></h2>
-            <p>Discover handpicked indie gems that push the boundaries of storytelling, art, and gameplay. These titles prove that the best experiences don't always come from the biggest studios.</p>
+            <span className="indie-line" />
           </div>
-          <div className="indie-right">
-            <div className="indie-card">
-              <img src="/Assets/Indie Spotlight 1.png" alt="Ghost of Tsushima" />
-              <div className="indie-card-overlay">
-                <h3>Ghost of <em>Tsushima</em></h3>
-                <p>A breathtaking open-world samurai epic set in feudal Japan, where honor and survival collide.</p>
-              </div>
+          <div className="indie-content">
+            <div className="indie-left">
+              <span className="indie-kicker">Featured</span>
+              <p>Discover handpicked indie gems that push the boundaries of storytelling, art, and gameplay. These titles prove that the best experiences don't always come from the biggest studios.</p>
             </div>
-            <div className="indie-nav">
-              <button className="indie-nav-btn" type="button" aria-label="Previous"><CaretLeft size={18} weight="bold" /></button>
-              <button className="indie-nav-btn" type="button" aria-label="Next"><CaretRight size={18} weight="bold" /></button>
+            <div className="indie-right">
+              <div className="indie-card">
+                <img src="/Assets/Indie%20Spotlight%201.png" alt="Ghost of Tsushima" />
+                <div className="indie-card-overlay">
+                  <h3>Ghost of <em>Tsushima</em></h3>
+                  <p>A breathtaking open-world samurai epic set in feudal Japan, where honor and survival collide.</p>
+                </div>
+              </div>
+              <div className="indie-nav">
+                <button className="indie-nav-btn" type="button" aria-label="Previous"><CaretLeft size={18} weight="bold" /></button>
+                <button className="indie-nav-btn" type="button" aria-label="Next"><CaretRight size={18} weight="bold" /></button>
+              </div>
             </div>
           </div>
         </section>
 
+        {/* New Release / Most Played / Top Rated */}
         <section className="three-col-section" aria-label="Game collections">
           <div className="three-col-grid">
             {[
