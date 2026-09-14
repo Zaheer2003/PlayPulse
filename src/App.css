@@ -176,8 +176,8 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .three-col-list { display: flex; flex-direction: column; gap: 14px; }
 .three-col-card { align-items: flex-start; display: flex; gap: 14px; }
 .three-col-card img { border-radius: 8px; flex-shrink: 0; height: 160px; object-fit: cover; width: 120px; }
-.three-col-info { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-.three-col-name { color: #eee; font-size: 13px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.three-col-desc { color: #666; font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.three-col-info { display: flex; flex-direction: column; min-width: 0; }
+.three-col-name { color: #eee; font-size: 13px; font-weight: 600; margin-bottom: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.three-col-desc { color: #666; font-size: 11px; margin-bottom: 30px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .three-col-rating { align-items: center; color: #f5c451; display: inline-flex; font-size: 11px; font-weight: 600; gap: 4px; }
 .three-col-rating svg { font-size: 11px; }
