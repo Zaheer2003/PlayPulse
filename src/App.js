@@ -122,7 +122,7 @@ function App() {
                   </div>
                 </div>
                 <p>{game.desc}</p>
-                <button className="play-now-button" type="button"><Play weight="regular" /> Play now</button>
+                <button className="play-now-button" type="button">Play now</button>
               </div>
             ))}
             </div>
