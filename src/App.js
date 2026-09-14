@@ -164,9 +164,7 @@ function App() {
               { img: '/Assets/Upcoming 3.png', title: 'Nova Protocol', desc: 'A sci-fi stealth thriller where every choice reshapes the galaxy.', price: 'LKR 4,499' },
             ].map((game) => (
               <div className="upcoming-card" key={game.title}>
-                <div className="upcoming-img-wrap">
-                  <img src={game.img} alt={game.title} />
-                </div>
+                <img src={game.img} alt={game.title} />
                 <div className="upcoming-body">
                   <h3>{game.title}</h3>
                   <p>{game.desc}</p>
