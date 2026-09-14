@@ -4,6 +4,8 @@ import {
   BoxingGlove,
   BookmarkSimple,
   CaretDown,
+  CaretLeft,
+  CaretRight,
   CirclesThreePlus,
   Crosshair,
   CrownCross,
@@ -178,7 +180,27 @@ function App() {
             ))}
           </div>
         </section>
-      </main>
+
+        <section className="indie-section" aria-labelledby="indie-title">
+          <div className="indie-left">
+            <span className="indie-kicker">Featured</span>
+            <h2 id="indie-title">Indie <em>Spotlight</em></h2>
+            <p>Discover handpicked indie gems that push the boundaries of storytelling, art, and gameplay. These titles prove that the best experiences don't always come from the biggest studios.</p>
+          </div>
+          <div className="indie-right">
+            <div className="indie-card">
+              <img src="/Assets/Indie Spotlight 1.png" alt="Ghost of Tsushima" />
+              <div className="indie-card-overlay">
+                <h3>Ghost of <em>Tsushima</em></h3>
+                <p>A breathtaking open-world samurai epic set in feudal Japan, where honor and survival collide.</p>
+              </div>
+            </div>
+            <div className="indie-nav">
+              <button className="indie-nav-btn" type="button" aria-label="Previous"><CaretLeft size={18} weight="bold" /></button>
+              <button className="indie-nav-btn" type="button" aria-label="Next"><CaretRight size={18} weight="bold" /></button>
+            </div>
+          </div>
+        </section>
       <Footer />
     </div>
   );
