@@ -62,8 +62,7 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 @media (max-width: 450px) { h1 { font-size: 55px; letter-spacing: -3px; }.hero-art { height: 345px; }.game-card { bottom: 22px; left: 18px; }.tag-top { left: 18px; }.tag-bottom { bottom: 15px; right: 16px; }.hero-actions { align-items: flex-start; flex-direction: column; gap: 12px; }.member-note { margin-top: 29px; } }
 .dashboard-grid { display: grid; gap: 24px; grid-template-columns: minmax(0, 1.5fr) minmax(330px, 1fr); margin: 0 auto; max-width: 1500px; padding: 42px 5.5vw 70px; }
 .trailer-panel { background: transparent; border: 0; border-radius: 0; }
-.hub-panel { background: transparent; border: 0; border-radius: 0; }
-.channels-panel { background: #202020; border: 1px solid #303030; border-radius: 10px; }
+.hub-panel, .channels-panel { background: transparent; border: 0; border-radius: 0; }
 .trailer-panel { min-width: 0; overflow: hidden; }
 .panel-heading { align-items: flex-end; display: flex; justify-content: space-between; padding: 25px 26px 20px; }
 .panel-heading.compact { align-items: center; padding: 22px 24px 12px; }
@@ -84,3 +83,4 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .profile-row { display: flex; flex-direction: column; gap: 8px; padding: 0 0 18px; width: 100%; }.profile-card { align-items: center; display: grid; column-gap: 10px; grid-template-columns: 42px minmax(0, 1fr) auto; min-height: 48px; padding: 3px 0; width: 100%; }.profile-card img { grid-column: 1; grid-row: 1; margin: 0; }.profile-info { grid-column: 2; grid-row: 1; min-width: 0; }.live-button { grid-column: 3; grid-row: 1; margin-left: 0; }
 .hub-panel .panel-heading.compact { padding-left: 0; }
 .community-show-more { margin: 0 0 18px; }
+.channel-row { display: flex; flex-direction: column; gap: 8px; padding: 0; }.channel-card { background: transparent; border-radius: 0; grid-template-columns: 52px 1fr; padding: 4px 0; }.channel-show-more { margin: 0 0 18px; }
