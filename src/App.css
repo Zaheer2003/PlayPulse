@@ -95,10 +95,9 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .trending-card { border-right: 1px solid rgba(252,99,126,.12); display: flex; flex-direction: column; gap: 12px; padding: 0 20px; }
 .trending-card:first-child { padding-left: 0; }
 .trending-card:last-child { border-right: 0; padding-right: 0; }
-.trending-card-top { align-items: center; display: flex; gap: 10px; }
-.trending-card-top img { border-radius: 8px; flex-shrink: 0; height: 52px; object-fit: cover; width: 52px; }
-.trending-card-meta { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
-.trending-card-meta h3 { color: #fff; font-size: 13px; font-weight: 600; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.trending-card > img { border-radius: 10px; height: 140px; object-fit: cover; width: 100%; }
+.trending-card-name-row { align-items: center; display: flex; justify-content: space-between; }
+.trending-card-name-row h3 { color: #fff; font-size: 13px; font-weight: 600; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .trending-rating { align-items: center; color: #f5c451; display: inline-flex; font-size: 12px; font-weight: 600; gap: 4px; }
 .trending-rating svg { font-size: 12px; }
 .trending-card p { color: #888; flex: 1; font-size: 11px; line-height: 1.5; margin: 0; }
