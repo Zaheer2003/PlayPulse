@@ -146,7 +146,7 @@ function App() {
               ['Educational', GraduationCap, '43 Games'],
             ].map(([label, Icon, count]) => (
               <a className="category-card" href={`#${label.toLowerCase()}`} key={label}>
-                <div className="category-icon"><Icon size={28} weight="regular" /></div>
+                <div className="category-icon"><Icon size={38} weight="regular" /></div>
                 <div className="category-info">
                   <span className="category-name">{label}</span>
                   <span className="category-count">{count}</span>
@@ -162,9 +162,9 @@ function App() {
           </div>
           <div className="upcoming-grid">
             {[
-              { img: '/Assets/Upcoming 1.png', title: 'Hollow Veil', desc: 'A haunting action RPG set in a fractured world between life and shadow.', price: 'LKR 3,999' },
-              { img: '/Assets/Upcoming 2.png', title: 'Iron Siege', desc: 'Command massive war machines in an epic futuristic battlefield.', price: 'LKR 4,999' },
-              { img: '/Assets/Upcoming 3.png', title: 'Nova Protocol', desc: 'A sci-fi stealth thriller where every choice reshapes the galaxy.', price: 'LKR 4,499' },
+              { img: '/Assets/Upcoming 1.png', title: 'Uncharted 4', desc: 'A haunting action RPG set in a fractured world between life and shadow.', price: 'LKR 3,999' },
+              { img: '/Assets/Upcoming 2.png', title: 'FC 26', desc: 'Command massive war machines in an epic futuristic battlefield.', price: 'LKR 4,999' },
+              { img: '/Assets/Upcoming 3.png', title: 'RDR2', desc: 'A sci-fi stealth thriller where every choice reshapes the galaxy.', price: 'LKR 4,499' },
             ].map((game) => (
               <div className="upcoming-card" key={game.title}>
                 <img src={game.img} alt={game.title} />

@@ -108,7 +108,7 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .categories-grid { display: grid; gap: 16px; grid-template-columns: repeat(5, 1fr); }
 .category-card { background: linear-gradient(160deg, #2a0d14 0%, #0d0d0d 60%, #1a0508 100%); border: 1px solid rgba(252,99,126,.15); border-radius: 14px; display: flex; flex-direction: column; height: 140px; justify-content: space-between; padding: 18px; transition: border-color .2s, background .2s; }
 .category-card:hover { background: linear-gradient(160deg, #3d1220 0%, #1a0d0d 60%, #2a0a10 100%); border-color: var(--primary); }
-.category-icon { align-items: center; align-self: flex-end; background: rgba(252,99,126,.12); border-radius: 50%; color: var(--primary); display: flex; height: 48px; justify-content: center; width: 48px; }
+.category-icon { align-items: center; align-self: flex-end; color: var(--primary); display: flex; height: 48px; justify-content: center; width: 48px; }
 .category-info { display: flex; flex-direction: column; gap: 4px; }
 .category-name { color: #fff; font-size: 14px; font-weight: 600; }
 .category-count { color: #666; font-size: 11px; }
