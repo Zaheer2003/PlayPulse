@@ -92,7 +92,7 @@ function App() {
       <main id="top">
         <section className="dashboard-grid" aria-label="Play Pulse dashboard">
           <article className="trailer-panel" id="games">
-            <div className="panel-heading"><div><p className="eyebrow">Trending now</p><h1 id="hero-title">Trending trailers</h1></div><span className="slide-count">01 / 04</span></div>
+            <div className="panel-heading"><span className="slide-count">01 / 04</span></div>
             <div className="trailer-art"><img src="/Assets/Home Carousel 1.jpg" alt="The Blood of Dawn Walker trailer artwork" /><div className="trailer-overlay"><span className="trailer-kicker">#Trending</span><h2>The Blood of <em>Dawn Walker</em></h2><p>Enter a dark, mythic adventure and fight your way through a world shaped by ancient power.</p><div className="trailer-actions"><button className="play-now-button" type="button"><Play weight="fill" /> Play now</button><button className="save-trailer-button" type="button" aria-label="Save The Blood of Dawn Walker" title="Save trailer"><BookmarkSimple weight="regular" /></button></div></div><div className="trailer-bottom-meta"><div className="watch-preview"><img src="/Assets/Home Carousel 2.jpg" alt="Trailer preview" /><span>Watch trailer</span><Play weight="fill" /></div><div className="trailer-stats"><span><Star weight="fill" /> 4.9</span><span><Clock /> 2h 10m</span></div></div><a className="trailer-next" href="#games" aria-label="Next trailer"><ArrowRight /></a></div>
           </article>
 
