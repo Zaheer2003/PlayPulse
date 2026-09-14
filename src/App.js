@@ -236,13 +236,11 @@ function App() {
             <h2 id="indie-title">Indie <em>Spotlight</em></h2>
             <span className="indie-line" />
           </div>
+          <p className="indie-section-desc">Discover handpicked indie gems that push the boundaries of storytelling, art, and gameplay. These titles prove that the best experiences don't always come from the biggest studios.</p>
           <div className="indie-content">
             <div className="indie-right">
               <div className="indie-card">
                 <img src="/Assets/Indie%20Spotlight%201.png" alt="Ghost of Tsushima" />
-                <div className="indie-card-overlay">
-                  <h3>Ghost of <em>Tsushima</em></h3>
-                </div>
               </div>
               <div className="indie-nav">
                 <button className="indie-nav-btn" type="button" aria-label="Previous"><CaretLeft size={18} weight="bold" /></button>
@@ -252,6 +250,7 @@ function App() {
             <div className="indie-left">
               <h3 className="indie-game-title">Ghost of Tsushima</h3>
               <span className="indie-release">Release Date: November 18, 2021</span>
+              <p className="indie-desc">A breathtaking open-world samurai epic set in feudal Japan, where honor and survival collide against the Mongol invasion.</p>
               <p className="indie-desc">Discover handpicked indie gems that push the boundaries of storytelling, art, and gameplay. These titles prove that the best experiences don't always come from the biggest studios.</p>
               <div className="indie-tags">
                 <span className="indie-tag">Action</span>
