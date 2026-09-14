@@ -238,6 +238,26 @@ function App() {
           </div>
           <p className="indie-section-desc">Discover handpicked indie gems that push the boundaries of storytelling, art, and gameplay. These titles prove that the best experiences don't always come from the biggest studios.</p>
           <div className="indie-content">
+            <div className="indie-detail-card">
+              <h3 className="indie-game-title">Ghost of Tsushima</h3>
+              <span className="indie-release">Release Date: November 18, 2021</span>
+              <p className="indie-desc">A breathtaking open-world samurai epic set in feudal Japan, where honor and survival collide against the Mongol invasion.</p>
+              <div className="indie-tags">
+                <span className="indie-tag">Action</span>
+                <span className="indie-tag">Adventure</span>
+                <span className="indie-tag">Open World</span>
+                <span className="indie-tag">Samurai</span>
+              </div>
+              <button className="play-now-button indie-play-btn" type="button"><Play weight="regular" /> Play Now</button>
+              <div className="indie-bottom-row">
+                <span className="indie-rating"><Star weight="fill" /> 4.9/5</span>
+                <div className="indie-platforms">
+                  <span className="indie-platforms-label">Available on:</span>
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-label="PlayStation"><path d="M8.984 2.596v14.347l3.219 1.016V6.207s2.735.68 2.735 3.337c0 2.728-1.765 3.755-2.735 3.755v2.78s4.668-.784 4.668-6.535c0-5.728-7.887-6.948-7.887-6.948zM0 17.244l4.668 1.512 3.219-1.016v-2.78L3.219 16.228V13.45L0 14.464v2.78zm15.016 1.512l4.668-1.512v-2.78l-3.219 1.016v-2.78l-3.219 1.016v2.78l1.77-.557v2.817z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-label="Xbox"><path d="M4.102 5.481C2.786 6.96 2 8.892 2 11c0 4.418 3.582 8 8 8s8-3.582 8-8c0-2.108-.786-4.04-2.102-5.519C14.516 6.74 12.376 8.5 10 8.5S5.484 6.74 4.102 5.481zM10 2a9 9 0 0 1 6.538 2.838C15.119 3.675 12.67 2.5 10 2.5S4.881 3.675 3.462 4.838A9 9 0 0 1 10 2zm0 8.5c1.933 0 3.725-.672 5.14-1.787A7.965 7.965 0 0 1 18 11c0 4.418-3.582 8-8 8s-8-3.582-8-8a7.965 7.965 0 0 1 2.86-6.287C6.275 9.828 8.067 10.5 10 10.5z"/></svg>
+                </div>
+              </div>
+            </div>
             <div className="indie-right">
               <div className="indie-card">
                 <img src="/Assets/Indie%20Spotlight%201.png" alt="Ghost of Tsushima" />
@@ -245,28 +265,6 @@ function App() {
               <div className="indie-nav">
                 <button className="indie-nav-btn" type="button" aria-label="Previous"><CaretLeft size={18} weight="bold" /></button>
                 <button className="indie-nav-btn" type="button" aria-label="Next"><CaretRight size={18} weight="bold" /></button>
-              </div>
-            </div>
-            <div className="indie-left">
-              <div className="indie-detail-card">
-                <h3 className="indie-game-title">Ghost of Tsushima</h3>
-                <span className="indie-release">Release Date: November 18, 2021</span>
-                <p className="indie-desc">A breathtaking open-world samurai epic set in feudal Japan, where honor and survival collide against the Mongol invasion.</p>
-                <div className="indie-tags">
-                  <span className="indie-tag">Action</span>
-                  <span className="indie-tag">Adventure</span>
-                  <span className="indie-tag">Open World</span>
-                  <span className="indie-tag">Samurai</span>
-                </div>
-                <button className="play-now-button indie-play-btn" type="button"><Play weight="regular" /> Play Now</button>
-                <div className="indie-bottom-row">
-                  <span className="indie-rating"><Star weight="fill" /> 4.9/5</span>
-                  <div className="indie-platforms">
-                    <span className="indie-platforms-label">Available on:</span>
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-label="PlayStation"><path d="M8.984 2.596v14.347l3.219 1.016V6.207s2.735.68 2.735 3.337c0 2.728-1.765 3.755-2.735 3.755v2.78s4.668-.784 4.668-6.535c0-5.728-7.887-6.948-7.887-6.948zM0 17.244l4.668 1.512 3.219-1.016v-2.78L3.219 16.228V13.45L0 14.464v2.78zm15.016 1.512l4.668-1.512v-2.78l-3.219 1.016v-2.78l-3.219 1.016v2.78l1.77-.557v2.817z"/></svg>
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-label="Xbox"><path d="M4.102 5.481C2.786 6.96 2 8.892 2 11c0 4.418 3.582 8 8 8s8-3.582 8-8c0-2.108-.786-4.04-2.102-5.519C14.516 6.74 12.376 8.5 10 8.5S5.484 6.74 4.102 5.481zM10 2a9 9 0 0 1 6.538 2.838C15.119 3.675 12.67 2.5 10 2.5S4.881 3.675 3.462 4.838A9 9 0 0 1 10 2zm0 8.5c1.933 0 3.725-.672 5.14-1.787A7.965 7.965 0 0 1 18 11c0 4.418-3.582 8-8 8s-8-3.582-8-8a7.965 7.965 0 0 1 2.86-6.287C6.275 9.828 8.067 10.5 10 10.5z"/></svg>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
