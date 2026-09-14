@@ -126,6 +126,30 @@ function App() {
             </div>
           </div>
         </section>
+
+        <section className="categories-section" aria-labelledby="categories-title">
+          <div className="categories-header">
+            <h2 id="categories-title">Browse <em>Categories</em></h2>
+          </div>
+          <div className="categories-grid">
+            {[
+              ['Driving', SteeringWheel],
+              ['Shooting', Crosshair],
+              ['Sports', Football],
+              ['Adventure', Mountains],
+              ['Fighting', BoxingGlove],
+              ['Puzzle', PuzzlePiece],
+              ['Management', CrownCross],
+              ['Strategy', CurrencyCircleDollar],
+              ['Educational', GraduationCap],
+            ].map(([label, Icon]) => (
+              <a className="category-card" href={`#${label.toLowerCase()}`} key={label}>
+                <div className="category-icon"><Icon size={28} weight="regular" /></div>
+                <span>{label}</span>
+              </a>
+            ))}
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

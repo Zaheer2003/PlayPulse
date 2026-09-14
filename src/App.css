@@ -101,3 +101,12 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .trending-rating svg { font-size: 12px; }
 .trending-card p { color: #888; flex: 1; font-size: 11px; line-height: 1.5; margin: 0; padding: 0 14px; }
 .trending-card .play-now-button { background: #000; font-size: 11px; justify-content: center; margin: 0 14px 14px; padding: 9px; width: calc(100% - 28px); }
+.categories-section { margin: 0 5.5vw; padding: 20px 0 80px; }
+.categories-header { margin-bottom: 32px; }
+.categories-header h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 500; letter-spacing: -1.5px; line-height: 1; margin: 0; }
+.categories-header h2 em { color: var(--primary); font-style: normal; }
+.categories-grid { display: grid; gap: 16px; grid-template-columns: repeat(9, 1fr); }
+.category-card { align-items: center; background: linear-gradient(160deg, #2a0d14 0%, #0d0d0d 60%, #1a0508 100%); border: 1px solid rgba(252,99,126,.15); border-radius: 14px; display: flex; flex-direction: column; gap: 14px; padding: 28px 16px; text-align: center; transition: border-color .2s, background .2s; }
+.category-card:hover { background: linear-gradient(160deg, #3d1220 0%, #1a0d0d 60%, #2a0a10 100%); border-color: var(--primary); }
+.category-icon { align-items: center; background: rgba(252,99,126,.12); border-radius: 50%; color: var(--primary); display: flex; height: 56px; justify-content: center; width: 56px; }
+.category-card span { color: #ccc; font-size: 12px; font-weight: 500; }
