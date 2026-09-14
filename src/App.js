@@ -119,7 +119,7 @@ function App() {
                 <img src={game.img} alt={game.title} />
                 <div className="trending-card-name-row">
                   <h3>{game.title}</h3>
-                  <span className="trending-rating"><Star weight="fill" /> {game.rating}</span>
+                  <span className="trending-rating"><Star weight="fill" /> {game.rating}/5</span>
                 </div>
                 <p>{game.desc}</p>
                 <button className="play-now-button" type="button">Play now</button>
@@ -206,10 +206,10 @@ function App() {
           <div className="three-col-grid">
             {[
               { title: 'New Release', games: [
-                { img: '/Assets/New release (1).png', name: 'Phantom Edge', desc: 'A fast-paced cyberpunk slasher.', rating: '4.5' },
-                { img: '/Assets/New release (2).png', name: 'Solar Drift', desc: 'Race through the cosmos at light speed.', rating: '4.3' },
-                { img: '/Assets/New release (3).png', name: 'Crimson Pact', desc: 'Dark fantasy RPG with brutal combat.', rating: '4.6' },
-                { img: '/Assets/New release (4).png', name: 'Void Runner', desc: 'Survive the endless void alone.', rating: '4.2' },
+                { img: '/Assets/New release (1).png', name: 'Ghostbusters: Spirits Unleashed', desc: 'A fast-paced cyberpunk slasher.', rating: '4.5' },
+                { img: '/Assets/New release (2).png', name: 'God of War', desc: 'Race through the cosmos at light speed.', rating: '4.3' },
+                { img: '/Assets/New release (3).png', name: 'Days Gone', desc: 'Dark fantasy RPG with brutal combat.', rating: '4.6' },
+                { img: '/Assets/New release (4).png', name: 'God of War 4', desc: 'Survive the endless void alone.', rating: '4.2' },
               ]},
               { title: 'Most Played', games: [
                 { img: '/Assets/Most played (1).png', name: 'Iron Clash', desc: 'Massive multiplayer tank warfare.', rating: '4.7' },
@@ -218,10 +218,10 @@ function App() {
                 { img: '/Assets/Most played (4).png', name: 'Blaze Squad', desc: 'Co-op shooter with explosive action.', rating: '4.4' },
               ]},
               { title: 'Top Rated', games: [
-                { img: '/Assets/Top rated (1).png', name: 'Echo Realm', desc: 'Puzzle adventure in a mirrored world.', rating: '4.9' },
-                { img: '/Assets/Top rated (2).png', name: 'Neon Siege', desc: 'Defend your city in neon-lit chaos.', rating: '4.8' },
-                { img: '/Assets/Top rated (3).png', name: 'Frost Legion', desc: 'Command an army across frozen lands.', rating: '4.8' },
-                { img: '/Assets/Top rated (4).png', name: 'Apex Throne', desc: 'Claim the throne in this epic RPG.', rating: '4.7' },
+                { img: '/Assets/Top rated (1).png', name: 'Dota 2', desc: 'Puzzle adventure in a mirrored world.', rating: '4.9' },
+                { img: '/Assets/Top rated (2).png', name: "Assassin's Creed Mirage", desc: 'Defend your city in neon-lit chaos.', rating: '4.8' },
+                { img: '/Assets/Top rated (3).png', name: 'Uncharted: Legacy of Thieves', desc: 'Command an army across frozen lands.', rating: '4.8' },
+                { img: '/Assets/Top rated (4).png', name: 'Evil Dead: The Game', desc: 'Claim the throne in this epic RPG.', rating: '4.7' },
               ]},
             ].map((col) => (
               <div className="three-col" key={col.title}>
@@ -236,7 +236,7 @@ function App() {
                       <div className="three-col-info">
                         <span className="three-col-name">{game.name}</span>
                         <span className="three-col-desc">{game.desc}</span>
-                        <span className="three-col-rating"><Star weight="fill" /> {game.rating}</span>
+                        <span className="three-col-rating"><Star weight="fill" /> {game.rating}/5</span>
                       </div>
                     </div>
                   ))}
