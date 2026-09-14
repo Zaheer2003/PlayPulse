@@ -137,6 +137,7 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .indie-content { align-items: start; display: grid; gap: 50px; grid-template-columns: 1.2fr 1fr; }
 .indie-right { display: flex; flex-direction: column; gap: 16px; }
 .indie-left { display: flex; flex-direction: column; gap: 14px; }
+.indie-detail-card { background: #1c1c1c; border: 1px solid #2e2e2e; border-radius: 16px; display: flex; flex-direction: column; gap: 14px; padding: 24px; }
 .indie-kicker { color: var(--primary); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
 .indie-game-title { color: #fff; font-family: 'Kumar One', serif; font-size: clamp(22px, 2.5vw, 32px); font-weight: 400; letter-spacing: -1px; margin: 0; }
 .indie-release { color: #666; font-size: 12px; }
