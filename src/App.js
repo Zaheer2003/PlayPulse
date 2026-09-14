@@ -150,7 +150,34 @@ function App() {
             ))}
           </div>
         </section>
-      </main>
+
+        <section className="upcoming-section" aria-labelledby="upcoming-title">
+          <div className="upcoming-header">
+            <h2 id="upcoming-title">Upcoming <em>Games</em></h2>
+          </div>
+          <div className="upcoming-grid">
+            {[
+              { img: '/Assets/Upcoming 1.png', title: 'Hollow Veil', desc: 'A haunting action RPG set in a fractured world between life and shadow.', price: '$49.99' },
+              { img: '/Assets/Upcoming 2.png', title: 'Iron Siege', desc: 'Command massive war machines in an epic futuristic battlefield.', price: '$59.99' },
+              { img: '/Assets/Upcoming 3.png', title: 'Nova Protocol', desc: 'A sci-fi stealth thriller where every choice reshapes the galaxy.', price: '$54.99' },
+            ].map((game) => (
+              <div className="upcoming-card" key={game.title}>
+                <div className="upcoming-img-wrap">
+                  <img src={game.img} alt={game.title} />
+                  <span className="upcoming-badge">Coming Soon</span>
+                </div>
+                <div className="upcoming-body">
+                  <h3>{game.title}</h3>
+                  <p>{game.desc}</p>
+                  <div className="upcoming-footer">
+                    <span className="upcoming-price">{game.price}</span>
+                    <button className="preorder-button" type="button">Pre-order</button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
       <Footer />
     </div>
   );
