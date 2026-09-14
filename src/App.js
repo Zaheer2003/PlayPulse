@@ -99,6 +99,33 @@ function App() {
             <section className="channels-panel" id="playlists" aria-labelledby="channels-title"><div className="panel-heading compact"><div><h2 id="channels-title">Discover channels</h2></div></div><div className="channel-row"><div className="channel-card"><img src="/Assets/Indie Spotlight 1.png" alt="Indie spotlight channel" /><div className="channel-info"><strong>Indie spotlight</strong><small>24 games</small></div><button className="join-button" type="button">Join</button></div><div className="channel-card"><img src="/Assets/Indie Spotlight 2.png" alt="Late-night co-op channel" /><div className="channel-info"><strong>Late-night co-op</strong><small>18 games</small></div><button className="join-button" type="button">Join</button></div></div><a className="show-more channel-show-more" href="#playlists">Show more <ArrowRight /></a></section>
           </div>
         </section>
+
+        <section className="trending-section" aria-labelledby="trending-title">
+          <div className="trending-header">
+            <h2 id="trending-title">Trending <em>Games</em></h2>
+          </div>
+          <div className="trending-list">
+            {[
+              { img: '/Assets/Trending 1.png', title: 'Darkwood', desc: 'A terrifying survival horror set in a mysterious, ever-changing forest.', rating: '4.6' },
+              { img: '/Assets/Trending 2.png', title: "Assassin's Creed", desc: 'Relive the Crusades as a master assassin in a vast open world.', rating: '4.7' },
+              { img: '/Assets/Trending 3.png', title: 'NFS: Shift', desc: 'High-octane street racing with precision handling and roaring engines.', rating: '4.5' },
+              { img: '/Assets/Trending 4.png', title: 'Warface', desc: 'Fast-paced online tactical shooter with intense multiplayer combat.', rating: '4.4' },
+              { img: '/Assets/Trending 5.png', title: "Assassin's Creed Valhalla", desc: 'Lead Viking raids across England in this epic open-world adventure.', rating: '4.8' },
+            ].map((game) => (
+              <div className="trending-card" key={game.title}>
+                <img src={game.img} alt={game.title} />
+                <div className="trending-card-body">
+                  <h3>{game.title}</h3>
+                  <p>{game.desc}</p>
+                  <div className="trending-card-footer">
+                    <span className="trending-rating"><Star weight="fill" /> {game.rating}</span>
+                    <button className="play-now-button" type="button"><Play weight="regular" /> Play now</button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

@@ -86,3 +86,18 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .channel-row { display: flex; flex-direction: column; gap: 8px; padding: 0; }.channel-card { align-items: center; background: transparent; border-radius: 0; display: grid; gap: 10px; grid-template-columns: 42px minmax(0, 1fr) auto; padding: 4px 0; }.channel-card img { border-radius: 50%; grid-column: 1; grid-row: 1; height: 42px; width: 42px; }.channel-info { display: flex; flex-direction: column; grid-column: 2; grid-row: 1; min-width: 0; }.channel-card span { margin: 0; }.channel-card small { margin: 3px 0 0; }.join-button { background: transparent; border: 1px solid #4b4b4b; border-radius: 50px; color: #aaa; font-size: 9px; grid-column: 3; grid-row: 1; padding: 4px 10px; }.channel-show-more { margin: 0 0 18px; }
 .channel-info strong { color: #eee; font-size: 12px; font-weight: 500; }
 .trailer-overlay { bottom: 132px; display: flex; flex-direction: column; gap: 20px; }.trailer-overlay-header { display: flex; flex-direction: column; gap: 60px; }.trailer-overlay h2 { margin: 0; }.trailer-overlay p { margin: 0; }.trailer-actions { margin-top: 0; }.trailer-bottom-meta { bottom: 18px; gap: 16px; }
+.trending-section { margin: 0 5.5vw; padding: 60px 0 80px; }
+.trending-header { margin-bottom: 32px; }
+.trending-header h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 500; letter-spacing: -1.5px; line-height: 1; margin: 0; }
+.trending-header h2 em { color: var(--primary); font-style: normal; }
+.trending-list { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 10px; scrollbar-width: none; }
+.trending-list::-webkit-scrollbar { display: none; }
+.trending-card { background: linear-gradient(135deg, #2a1a1e 0%, #1a0d10 50%, #2d1520 100%); border: 1px solid rgba(252,99,126,.15); border-radius: 14px; display: flex; flex-direction: column; flex-shrink: 0; overflow: hidden; width: 240px; }
+.trending-card img { height: 150px; object-fit: cover; width: 100%; }
+.trending-card-body { display: flex; flex-direction: column; flex: 1; gap: 8px; padding: 16px; }
+.trending-card-body h3 { color: #fff; font-size: 15px; font-weight: 600; letter-spacing: -0.3px; margin: 0; }
+.trending-card-body p { color: #888; font-size: 12px; flex: 1; line-height: 1.5; margin: 0; }
+.trending-card-footer { align-items: center; display: flex; justify-content: space-between; margin-top: 12px; }
+.trending-rating { align-items: center; color: #f5c451; display: inline-flex; font-size: 13px; font-weight: 600; gap: 5px; }
+.trending-rating svg { font-size: 13px; }
+.trending-card .play-now-button { font-size: 11px; padding: 8px 13px; }
