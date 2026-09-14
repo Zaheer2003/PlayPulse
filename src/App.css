@@ -135,9 +135,10 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .indie-divider-header h2 { color: #fff; font-size: clamp(20px, 2.5vw, 30px); font-weight: 500; letter-spacing: -1px; margin: 0; white-space: nowrap; }
 .indie-divider-header h2 em { color: var(--primary); font-style: normal; }
 .indie-section-desc { color: #777; font-size: 13px; line-height: 1.6; margin: -24px 0 32px; text-align: center; }
-.indie-content { align-items: start; display: grid; gap: 50px; grid-template-columns: 1.2fr 1fr; }
-.indie-right { display: flex; flex-direction: column; gap: 16px; }
-.indie-left { display: flex; flex-direction: column; gap: 14px; }
+.indie-content { align-items: center; display: grid; gap: 32px; grid-template-columns: 1.4fr 1fr auto; }
+.indie-col-img { min-width: 0; }
+.indie-col-detail { min-width: 0; }
+.indie-col-nav { align-items: center; display: flex; flex-direction: column; gap: 12px; justify-content: center; }
 .indie-detail-card { background: #1c1c1c; border: 1px solid #2e2e2e; border-radius: 16px; display: flex; flex-direction: column; gap: 14px; padding: 24px; }
 .indie-kicker { color: var(--primary); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
 .indie-game-title { color: #fff; font-family: 'Kumar One', serif; font-size: clamp(22px, 2.5vw, 32px); font-weight: 400; letter-spacing: -1px; margin: 0; }
