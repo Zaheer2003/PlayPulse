@@ -159,14 +159,13 @@ function App() {
           </div>
           <div className="upcoming-grid">
             {[
-              { img: '/Assets/Upcoming 1.png', title: 'Hollow Veil', desc: 'A haunting action RPG set in a fractured world between life and shadow.', price: '$49.99' },
-              { img: '/Assets/Upcoming 2.png', title: 'Iron Siege', desc: 'Command massive war machines in an epic futuristic battlefield.', price: '$59.99' },
-              { img: '/Assets/Upcoming 3.png', title: 'Nova Protocol', desc: 'A sci-fi stealth thriller where every choice reshapes the galaxy.', price: '$54.99' },
+              { img: '/Assets/Upcoming 1.png', title: 'Hollow Veil', desc: 'A haunting action RPG set in a fractured world between life and shadow.', price: 'LKR 3,999' },
+              { img: '/Assets/Upcoming 2.png', title: 'Iron Siege', desc: 'Command massive war machines in an epic futuristic battlefield.', price: 'LKR 4,999' },
+              { img: '/Assets/Upcoming 3.png', title: 'Nova Protocol', desc: 'A sci-fi stealth thriller where every choice reshapes the galaxy.', price: 'LKR 4,499' },
             ].map((game) => (
               <div className="upcoming-card" key={game.title}>
                 <div className="upcoming-img-wrap">
                   <img src={game.img} alt={game.title} />
-                  <span className="upcoming-badge">Coming Soon</span>
                 </div>
                 <div className="upcoming-body">
                   <h3>{game.title}</h3>
@@ -227,7 +226,7 @@ function App() {
               <div className="three-col" key={col.title}>
                 <div className="three-col-header">
                   <h2>{col.title}</h2>
-                  <a className="three-col-more" href="#">View More <CaretRight size={13} weight="bold" /></a>
+                  <button className="three-col-more" type="button">View More <CaretRight size={13} weight="bold" /></button>
                 </div>
                 <div className="three-col-list">
                   {col.games.map((game) => (
