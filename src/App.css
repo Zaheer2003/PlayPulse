@@ -144,3 +144,12 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .indie-nav { display: flex; gap: 10px; justify-content: flex-end; }
 .indie-nav-btn { align-items: center; background: #212121; border: 1px solid #3a3a3a; border-radius: 50%; color: #fff; display: flex; height: 40px; justify-content: center; transition: border-color .2s, color .2s; width: 40px; }
 .indie-nav-btn:hover { border-color: var(--primary); color: var(--primary); }
+.three-col-section { margin: 0 5.5vw; padding: 20px 0 80px; }
+.three-col-grid { display: grid; gap: 24px; grid-template-columns: repeat(3, 1fr); }
+.three-col { background: #1c1c1c; border: 1px solid #2e2e2e; border-radius: 16px; padding: 24px; }
+.three-col h2 { color: #fff; font-size: 18px; font-weight: 600; letter-spacing: -0.5px; margin: 0 0 20px; }
+.three-col-list { display: flex; flex-direction: column; gap: 14px; }
+.three-col-card { align-items: center; display: flex; gap: 14px; }
+.three-col-num { color: #444; font-size: 13px; font-weight: 700; min-width: 22px; }
+.three-col-card img { border-radius: 8px; flex-shrink: 0; height: 48px; object-fit: cover; width: 48px; }
+.three-col-name { color: #ddd; font-size: 13px; font-weight: 500; }

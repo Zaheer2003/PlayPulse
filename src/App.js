@@ -201,7 +201,45 @@ function App() {
             </div>
           </div>
         </section>
-      <Footer />
+
+        <section className="three-col-section" aria-label="Game collections">
+          <div className="three-col-grid">
+            {[
+              { title: 'New Release', games: [
+                { img: '/Assets/New release (1).png', name: 'Phantom Edge' },
+                { img: '/Assets/New release (2).png', name: 'Solar Drift' },
+                { img: '/Assets/New release (3).png', name: 'Crimson Pact' },
+                { img: '/Assets/New release (4).png', name: 'Void Runner' },
+              ]},
+              { title: 'Most Played', games: [
+                { img: '/Assets/Most played (1).png', name: 'Iron Clash' },
+                { img: '/Assets/Most played (2).png', name: 'Storm Arena' },
+                { img: '/Assets/Most played (3).png', name: 'Dark Nexus' },
+                { img: '/Assets/Most played (4).png', name: 'Blaze Squad' },
+              ]},
+              { title: 'Top Rated', games: [
+                { img: '/Assets/Top rated (1).png', name: 'Echo Realm' },
+                { img: '/Assets/Top rated (2).png', name: 'Neon Siege' },
+                { img: '/Assets/Top rated (3).png', name: 'Frost Legion' },
+                { img: '/Assets/Top rated (4).png', name: 'Apex Throne' },
+              ]},
+            ].map((col) => (
+              <div className="three-col" key={col.title}>
+                <h2>{col.title}</h2>
+                <div className="three-col-list">
+                  {col.games.map((game, i) => (
+                    <div className="three-col-card" key={game.name}>
+                      <span className="three-col-num">{String(i + 1).padStart(2, '0')}</span>
+                      <img src={game.img} alt={game.name} />
+                      <span className="three-col-name">{game.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
