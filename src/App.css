@@ -137,12 +137,12 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .indie-right { display: flex; flex-direction: column; gap: 16px; }
 .indie-left { display: flex; flex-direction: column; gap: 14px; }
 .indie-kicker { color: var(--primary); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
-.indie-game-title { color: #fff; font-size: clamp(22px, 2.5vw, 32px); font-weight: 600; letter-spacing: -1px; margin: 0; }
+.indie-game-title { color: #fff; font-family: 'Kumar One', serif; font-size: clamp(22px, 2.5vw, 32px); font-weight: 400; letter-spacing: -1px; margin: 0; }
 .indie-release { color: #666; font-size: 12px; }
 .indie-desc { color: #888; font-size: 13px; line-height: 1.7; margin: 0; }
 .indie-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .indie-tag { background: rgba(252,99,126,.1); border: 1px solid rgba(252,99,126,.25); border-radius: 50px; color: var(--primary); font-size: 11px; padding: 4px 12px; }
-.indie-rating-row { align-items: center; display: flex; gap: 10px; }
+.indie-bottom-row { align-items: center; display: flex; gap: 24px; }
 .indie-rating { align-items: center; color: #f5c451; display: inline-flex; font-size: 16px; font-weight: 700; gap: 6px; }
 .indie-rating svg { font-size: 16px; }
 .indie-platforms { align-items: center; display: flex; gap: 12px; }
