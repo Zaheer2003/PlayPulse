@@ -174,7 +174,7 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .three-col h2 { color: #fff; font-size: 18px; font-weight: 600; letter-spacing: -0.5px; margin: 0; }
 .three-col-more { align-items: center; background: transparent; border: 0; color: var(--primary); cursor: pointer; display: inline-flex; font-size: 11px; gap: 4px; padding: 0; }
 .three-col-list { display: flex; flex-direction: column; gap: 14px; }
-.three-col-card { align-items: center; display: flex; gap: 14px; }
+.three-col-card { align-items: flex-start; display: flex; gap: 14px; }
 .three-col-card img { border-radius: 8px; flex-shrink: 0; height: 160px; object-fit: cover; width: 120px; }
 .three-col-info { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .three-col-name { color: #eee; font-size: 13px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
