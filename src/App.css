@@ -139,22 +139,22 @@ h1 em, h2 em { color: var(--primary); font-style: normal; }
 .indie-col-main { border: 1px solid var(--primary); border-radius: 16px; display: grid; grid-template-columns: 1.4fr 1fr; overflow: hidden; width: 100%; }
 .indie-col-img { min-height: 420px; min-width: 0; }
 .indie-col-img img { display: block; height: 100%; object-fit: cover; width: 100%; }
-.indie-col-detail { background: #1c1c1c; display: flex; flex-direction: column; gap: 14px; padding: 28px; }
+.indie-col-detail { background: #1c1c1c; display: flex; flex-direction: column; gap: 10px; justify-content: center; padding: 20px; }
 .indie-col-nav { align-items: center; display: flex; flex-direction: column; gap: 12px; justify-content: center; }
 .indie-detail-card { display: flex; flex-direction: column; gap: 14px; }
 .indie-kicker { color: var(--primary); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
-.indie-game-title { color: #fff; font-family: 'Kumar One', serif; font-size: clamp(22px, 2.5vw, 32px); font-weight: 400; letter-spacing: -1px; margin: 0; }
-.indie-release { color: #666; font-size: 12px; }
-.indie-desc { color: #888; font-size: 13px; line-height: 1.7; margin: 0; }
-.indie-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-.indie-tag { background: rgba(252,99,126,.1); border: 1px solid rgba(252,99,126,.25); border-radius: 50px; color: var(--primary); font-size: 11px; padding: 4px 12px; }
-.indie-bottom-row { align-items: center; display: flex; gap: 24px; }
-.indie-rating { align-items: center; color: #f5c451; display: inline-flex; font-size: 16px; font-weight: 700; gap: 6px; }
-.indie-rating svg { font-size: 16px; }
-.indie-platforms { align-items: center; display: flex; gap: 12px; }
-.indie-platforms-label { color: #666; font-size: 12px; }
+.indie-game-title { color: #fff; font-family: 'Kumar One', serif; font-size: clamp(18px, 2vw, 26px); font-weight: 400; letter-spacing: -1px; margin: 0; }
+.indie-release { color: #666; font-size: 11px; }
+.indie-desc { color: #888; font-size: 12px; line-height: 1.6; margin: 0; }
+.indie-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.indie-tag { background: rgba(252,99,126,.1); border: 1px solid rgba(252,99,126,.25); border-radius: 50px; color: var(--primary); font-size: 10px; padding: 3px 10px; }
+.indie-bottom-row { align-items: center; display: flex; gap: 16px; }
+.indie-rating { align-items: center; color: #f5c451; display: inline-flex; font-size: 13px; font-weight: 700; gap: 5px; }
+.indie-rating svg { font-size: 13px; }
+.indie-platforms { align-items: center; display: flex; gap: 8px; }
+.indie-platforms-label { color: #666; font-size: 11px; }
 .indie-platforms svg { color: #aaa; }
-.indie-play-btn { align-self: flex-start; margin-top: 6px; }
+.indie-play-btn { align-self: flex-start; margin-top: 2px; }
 .indie-card { border-radius: 16px; overflow: hidden; position: relative; }
 .indie-card img { display: block; height: 340px; object-fit: cover; width: 100%; }
 .indie-card::after { background: linear-gradient(0deg, rgba(0,0,0,.85) 0%, transparent 55%); content: ''; inset: 0; position: absolute; }
