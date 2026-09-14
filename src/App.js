@@ -105,6 +105,7 @@ function App() {
             <h2 id="trending-title">Trending <em>Games</em></h2>
           </div>
           <div className="trending-list">
+            <div className="trending-wrapper">
             {[
               { img: '/Assets/Trending 1.png', title: 'Darkwood', desc: 'A terrifying survival horror set in a mysterious, ever-changing forest.', rating: '4.6' },
               { img: '/Assets/Trending 2.png', title: "Assassin's Creed", desc: 'Relive the Crusades as a master assassin in a vast open world.', rating: '4.7' },
@@ -113,19 +114,18 @@ function App() {
               { img: '/Assets/Trending 5.png', title: "Assassin's Creed Valhalla", desc: 'Lead Viking raids across England in this epic open-world adventure.', rating: '4.8' },
             ].map((game) => (
               <div className="trending-card" key={game.title}>
-                <img src={game.img} alt={game.title} />
-                <div className="trending-card-body">
-                  <p>{game.desc}</p>
-                  <div className="trending-card-footer">
-                    <div className="trending-card-name-row">
-                      <h3>{game.title}</h3>
-                      <span className="trending-rating"><Star weight="fill" /> {game.rating}</span>
-                    </div>
-                    <button className="play-now-button" type="button"><Play weight="regular" /> Play now</button>
+                <div className="trending-card-top">
+                  <img src={game.img} alt={game.title} />
+                  <div className="trending-card-meta">
+                    <h3>{game.title}</h3>
+                    <span className="trending-rating"><Star weight="fill" /> {game.rating}</span>
                   </div>
                 </div>
+                <p>{game.desc}</p>
+                <button className="play-now-button" type="button"><Play weight="regular" /> Play now</button>
               </div>
             ))}
+            </div>
           </div>
         </section>
       </main>
