@@ -240,6 +240,7 @@ function App() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
